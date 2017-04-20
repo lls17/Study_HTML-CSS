@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title> CSS的3种引入方式 </title>
+
+  <!-- 3、外部样式  -->
+  <!-- 优点：单个文件，便于维护 -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <style>
+	/* 2、内部样式
+		优：同一页面批量修改
+		缺：不能跨页面共享
+	*/
+	/*
+		div{
+			width:200px;
+			height:200px;
+			border:2px solid orange;
+		}
+	*/
+  </style>
+ </head>
+
+ <body>
+  <!--1、行间作用 
+		优：单个标签快速作用
+		缺：不便于批量修改
+  -->
+  <!--
+	<div style="width:100px;height:100px;border:1px solid green;"></div>
+  -->
+
+  <div></div>
+
+ </body>
+</html>
