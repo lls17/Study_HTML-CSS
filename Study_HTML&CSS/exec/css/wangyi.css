@@ -1,0 +1,33 @@
+.box{
+	margin: 30px auto;
+	height: 416px;
+	width: 300px;
+	border-top: 2px solid #206f96;
+}
+.title{
+	height: 29px;
+	border: 1px solid #CFCFCF;
+	border-top: none;
+	background: url(../img/bg-title.jpg) repeat-x;
+}
+.container{
+	height: 386px;
+	border: 1px solid #CFCFCF;
+	border-top: none;
+}
+.email{
+	height: 57px;
+	background: url(../img/icn-email.jpg) no-repeat 16px 25px;
+}
+.game{
+	height: 126px;
+	background: #f7f7f7 url(../img/icn-game.jpg) no-repeat 10px 50px;
+}
+.favorite{
+	height: 76px;
+	background: url(../img/icn-favorite.jpg) no-repeat 15px 25px;
+}
+.share{
+	height: 127px;
+	background: #f7f7f7 url(../img/icn-share.jpg) no-repeat 12px 50px;
+}

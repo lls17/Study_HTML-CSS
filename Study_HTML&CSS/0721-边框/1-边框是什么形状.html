@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				font-size: 6px;
+			}
+			#div1{
+				width: 50px;
+				height: 30px;
+				border-top: 10px solid salmon;
+			}
+			#div2{
+				width: 30px;
+				height: 30px;
+				border-top: 5px solid blueviolet;
+				border-right: 5px solid greenyellow;
+				border-bottom: 5px solid lightcoral;
+				border-left: 5px solid lightpink;
+			}
+			#div3{
+				width: 0px;
+				height: 0px;
+				border-top: 5px solid blueviolet;
+				border-right: 5px solid greenyellow;
+				border-bottom: 5px solid lightcoral;
+				border-left: 5px solid lightpink;
+			}
+			#div4{
+				border-top: 5px solid blueviolet;
+				border-right: 5px solid greenyellow;
+				border-bottom: 5px solid lightcoral;
+				border-left: 5px solid lightpink;
+			}
+			#div5{
+				width: 50px;
+				height: 50px;
+				border: 5px solid green;
+				border-top: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		只有border-top，无其他方向的border设置时，边缘为矩形。<br />
+		*注： 若要矩形（直角）的边角，则必定作用于两个容器（div）
+		<hr />
+		
+		<div id="div5"></div>
+		border-top:none;的情况。
+		<hr />
+		
+		<div id="div2"></div>
+		在有宽/高的情况下是梯形。<br />相邻的两条边并且颜色不一样时	，会出现非矩形.
+		<hr />
+		
+		<div id="div3"></div>
+		在宽高为0的情况下是三角形。
+		<hr />
+		
+		<div id="div4"></div>
+		width: 0px; 与不赋予width属性的效果是不同的。因不赋予width属性时，会继承父级。<br />
+		*注：上下为矩形，左右为三角形。
+		<hr />
+		
+		<div style="border:2px solid orange;width:10px;height:10px"></div>
+		<div style="border:2px solid blue;width:10px;height:10px"></div>
+		<hr />
+		
+	</body>
+</html>
