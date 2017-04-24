@@ -1,0 +1,60 @@
+.box{
+	width: 300px;
+	height: 417px;
+	border-top: 2px solid #206f96;
+}
+.title{
+	width: 288px;
+	height: 22px;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	background: url(../img/bg-title.jpg) repeat-x;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 7px;
+}
+.container{
+	width: 298px;
+	height: 386px;
+	border: 1px solid #cfcfcf;
+}
+.email{
+	width: 298px;
+	height: 57px;
+	background: url(../img/icn-email.jpg) no-repeat 16px 25px;
+}
+.game{
+	width: 298px;
+	height: 126px;
+	background: #f7f7f7 url(../img/icn-game.jpg) no-repeat 9px 51px;
+}
+.favorite{
+	width: 298px;
+	height: 76px;
+	background: url(../img/icn-favorite.jpg) no-repeat 15px 25px;
+}
+.share{
+	width: 298px;
+	height: 127px;
+	background: #f7f7f7 url(../img/icn-share.jpg) no-repeat 12px 49px;
+}
+a{
+	text-decoration: none;
+	color: #252525;
+	/*在便签内，强制不换行*/
+	white-space: nowrap;
+}
+.detail{
+	padding: 13px 0px 20px 50px;
+	font-size: 12px;
+	line-height: 25px;
+	word-spacing: 4px;
+	/*word-break: keep-all;*/
+}
+.pt19{
+	padding-top: 19px;
+}
+.font{
+	font-family: arial;
+}

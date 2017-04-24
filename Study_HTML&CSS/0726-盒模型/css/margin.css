@@ -1,0 +1,38 @@
+.box{
+	border: 1px dashed black;
+	width: 404px;
+	height: 404px;
+}
+.boxBlue{
+	border: 5px solid #d7effe;
+	background-color: #f6f6f6;
+	margin: 27px;
+	width: 340px;
+	height: 340px;
+}
+.boxPink{
+	border: 1px solid #ffa0df;
+	background-color: #ffa0df;
+	margin: 20px;
+	width: 298px;
+	height: 298px;
+}
+.boxWhite1{
+	border: 1px dashed white;
+	margin: 40px;
+	width: 216px;
+	height: 216px;
+}
+.boxWhite2{
+	border: 1px dashed white;
+	margin: 3px;
+	width: 208px;
+	height: 208px;
+}
+.boxGreen{
+	border: 5px solid #fcff00;
+	background-color: #96ff38;
+	margin: 49px;
+	width: 100px;
+	height: 100px;
+}

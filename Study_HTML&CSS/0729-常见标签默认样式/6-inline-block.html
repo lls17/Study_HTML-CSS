@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			Inline-block的特点和问题
+			特性：
+			1、块在一行显示；
+			2、行内属性标签支持宽高；
+			3、没有宽度的时候内容撑开宽度
+			
+			问题：
+			1、代码换行被解析；
+			2、ie6 ie7 不支持块属性标签的inline-block;
+		-->
+		<style>
+			div, span{
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+				vertical-align: top;
+			}
+			span{
+				display: inline-block;
+			}
+			div{
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div>I’m a cute DIV !</div>
+		<div>I’m a super cute DIV, too!</div>
+		<span>I’m a cute Span !</span>
+		<span>I’m a super cute Span, too!</span>
+	</body>
+</html>

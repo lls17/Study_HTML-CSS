@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				background-color: orange;
+				/* 解决子集“传递”的方法一：为父级加border（但占大小）*/
+				/*border: 1px solid black;*/
+				
+				/* 解决子集“传递”的方法二：用父级的padding来代替子集的margin*/
+				padding-top: 20px;
+				padding-bottom: 80px;
+			}
+			.item1{
+				background-color: pink;
+				height: 50px;
+				margin: 20px;
+			}
+			.item2{
+				background-color: yellowgreen;
+				height: 50px;
+				margin: 80px;
+			}
+			.box2{
+				background-color: cornflowerblue;
+				height: 100px;
+			}
+		</style>
+		<!--
+			问题1：
+				margin-top、margin-bottom传递
+				挨着上、下的子集的margin-top、margin-bottom传递给父级
+			解决方法：
+				1、添加border（会改变元素的大小） - ☆
+				2、给父级标签添加padding代替子集的margin - ☆☆☆☆☆
+		-->
+		<!--
+			问题2：
+				margin叠压
+				同级元素中，第一个元素的margin-bottom与第二个元素的margin-top叠压(重叠)
+				在叠压的margin中会去值较大的那一个
+			解决方法：
+				给某一个元素添加对应方向的margin值
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="item1">
+				我是Item111！
+			</div>
+			<div class="item2">
+				我是Item222！
+			</div>
+		</div>
+		<div class="box2"></div>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+/*css reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dd,div{
+	margin:0px;
+}
+ul,ol{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+img{
+	border: none; /*解决IE6下，a包裹之下的边框*/
+	vertical-align: top; /*解决包裹的下缝隙*/
+}
+a{
+	text-decoration: none;
+}

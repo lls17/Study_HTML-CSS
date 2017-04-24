@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*设置宽度和高度时，很有可能会影响图片展示的比例
+			等比缩放：
+				1、只修改宽度
+				2、只修改高度
+				
+			alt 图片加载失败时显示的文字
+			title 鼠标移到元素上提示的文字(图片加载失败时，没有alt属性，那么title也会充当alt的作用)*/
+			
+			/*原尺寸719*1280*/
+			img{
+				width: 200px;
+				/*height: 200px;*/
+			}
+		</style>
+	</head>
+	<body>
+		<h4>alt:当图片未被加载时显示</h4>
+		<h4>title：鼠标悬浮时显示</h4>
+		<img src="img/dress.jpg" title="鼠标移入的图片提示" alt="图片加载不出来时的显示" />
+	</body>
+</html>

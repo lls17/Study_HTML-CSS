@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			伪类: 给某个元素添加特殊的效果
+			
+			伪类的写法
+			:link	      没有访问过的链接
+			:visited  成功访问后的链接
+			:hover 	      鼠标悬停
+			:active   鼠标按下
+			
+			:hover :active给非a标签添加，会存在兼容性
+		-->
+		<style>
+			span{
+				color: red;
+				/*链接里下划线部分未变色，故给span里的内容加个下划线即可变色*/
+				text-decoration: underline;
+			}
+		
+			a{
+				color: palevioletred;
+			}
+			a:link{
+				color: blueviolet;
+			}
+			a:visited{
+				color: plum;
+			}
+			a:hover{
+				font-size: 20px;
+				color: red;
+			}
+			a:active{
+				color: orange;
+			}
+			
+			/* 给DIV加伪类效果 */
+			div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				background-color: pink;
+			}
+			div:hover{
+				background-color: #8A2BE2;
+				width: 300px;
+				height: 500px;
+			}
+			div:active{
+				background-color: hotpink;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com" target="_blank">跳到<span>百度萌萌哒~</span></a>
+		<div>
+			I'm a super cute DIV! <br />
+			a标签： 超链接、下载、锚点！ <br />
+			<span style="font-size: 12px;color:red;">提示：假如浏览器找不到已定义的命名锚，那么就会定位到文档的顶端。不会有错误发生。</span>
+		</div>
+	</body>
+</html>

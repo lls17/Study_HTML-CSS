@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/* 选择器优先级区分 */
+			a{
+				color: blueviolet;
+			}
+			/*优先级相同时，显示后面的样式！*/
+			#sectionId .divClass a{
+				color: green;
+			}
+			.sectionClass #divId a{
+				color: orangered;
+			}
+			#divId a{
+				color: gray;
+			}
+			
+		</style>
+		<!--
+			优先级
+				多个选择器选择同一个元素时，那么该元素应该显示哪个选择器的样式？
+				
+			行间样式		1000
+			id选择器		100
+			class选择器	10
+			标签选择器		1
+		-->
+	</head>
+	<body>
+		<section id="sectionId" class="sectionClass">
+			<div id="divId" class="divClass">
+				<a href="#" style="color: palevioletred;">北京</a>
+				<a href="#">上海</a>
+				<a href="#">山东</a>
+			</div>
+		</section>
+		<hr/>
+		
+		<div style="text-align: center">
+			Y=X<sub>1</sub><sup>2</sup>+X<sub>2</sub><sup>2</sup>  <br />
+			<!--<img src="img/dress.jpg" alt="" />-->
+		</div>
+		<em>我是em,我倾斜~\(≧▽≦)/~啦啦啦~</em> <br />
+		<i>我是i,我也倾斜啦~~~</i>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			img{
+				width:100px;
+				/*vertical-align: top;*/
+				/*border: none;*/
+			}
+			div{
+				border: 5px solid palevioletred;
+			}
+		</style>
+		<!--☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+			img被包裹时会出现缝隙
+				vertical-align: top;
+			在IE6下img被a标签包裹时会出现蓝色边框
+				border:none
+		-->
+	</head>
+	<body>
+		<a href="#">
+			<img src="img/dress.jpg" alt="Dress" title="鹿皮裙子"/>
+		</a>
+		<hr />
+		<div>
+			<img src="img/dress.jpg" alt="Dress" title="鹿皮裙子"/>
+		</div>
+	</body>
+</html>

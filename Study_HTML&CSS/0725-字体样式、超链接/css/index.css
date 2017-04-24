@@ -1,0 +1,8 @@
+div{
+	width: 500px;
+	height: 40px;
+	border: 1px solid #444;
+	font: 14px/38px "宋体";
+	word-spacing: 20px;
+	text-align: center;
+}

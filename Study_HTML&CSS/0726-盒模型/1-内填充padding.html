@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			padding 内填充
+			在标签内部填加与内容区域的距离
+			
+			padding	四个方向
+				padding-top
+				padding-right
+				padding-bottom
+				padding-left
+				
+			padding只有一个值时：4个方向都是一样的
+			padding有两个值时：第一个值控制的是上下；第二个值控制的是左右
+			padding有三个值时：第一个值控制的上；第二个值控制的左右；第三个值控制的下
+			padding有四个值时：第一个值控制的上；第二个值控制的右；第三个值控制的下；第四个值控制的左
+			
+			padding: top right bottom left;
+			padding: top right bottom 缺少的left会取相对方向的值（right）;
+			padding: top right 缺少的bottom会取相对方向的值（top） 缺少的left会取相对方向的值（right）;
+			padding: top 只有一个值是，四个方向都是统一的值;
+				
+		-->
+		<style>
+			div{
+				width: 500px;
+				border: 1px solid red;
+				padding: 10px 20px 30px 40px;	
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			I'm a cute BOX!
+		</div>
+	</body>
+</html>
