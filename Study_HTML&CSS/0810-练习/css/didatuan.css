@@ -1,0 +1,89 @@
+body, dl, dd{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+body{
+	font-size: 12px;
+	background-color: #fafafa;
+}
+.box{
+	width: 968px;
+	height: 112px;
+	padding: 4px 10px 2px 10px;
+	border: 1px solid #fff;
+	margin: 50px auto;
+	background-color: #f3f3f3;
+}
+.box dl{
+	float: left;
+	height: 30px;
+	width: 968px;
+	line-height: 30px;
+	/*margin-right: 20px;*/
+	padding-bottom: 2px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.box dt{
+	float: left;
+	margin-right: 30px;
+	color: #333;
+	font-weight: bold;
+}
+.box dd{
+	float: left;
+	margin-right: 20px;
+}
+.box dd a{
+	color: #444;
+}
+.box dd a.all{
+	display: inline-block;
+	width: 35px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	background: url(../img/bg_blue.png) no-repeat;
+}
+.box dd a .num{
+	font-family: "微软雅黑";
+	color: #b29487;
+}
+.box dd.more{
+	float: right;
+	margin-right: 0px;
+	margin-left: -20px;
+}
+.box dd.more a{
+	color: #ff9900;
+}
+.box dd.more .more_down{
+	float: right;
+	height: 14px;
+	width: 14px;
+	background: url(../img/ico_down.png) no-repeat;
+	margin: 8px 0 0 4px;
+}
+.box dd a.tag{
+	display: inline-block;
+	width: 35px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+	background: url(../img/bg_blue.png) no-repeat;
+}

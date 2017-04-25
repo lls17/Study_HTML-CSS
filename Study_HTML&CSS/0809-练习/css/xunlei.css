@@ -1,0 +1,128 @@
+body, h3{
+	margin: 0px;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+a{
+	text-decoration: none;
+}
+
+/*base*/
+.fl{
+	float: left;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.bg_box{
+	width: 162px;
+	height: 419px;
+	padding-top: 2px;
+	font-size: 14px;
+	color: #aaaaaa;
+	margin: 50px auto;
+}
+.bg_box .item{
+	width: 140px;
+	height: 404px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 14px 11px 0 10px;
+}
+.bg1{
+	background: url(../img/bg1.png) repeat-x;
+	color: #8ea45c;
+}
+.bg2{
+	background: url(../img/bg2.png) repeat-x;
+	color: #be4a93;
+}
+.bg3{
+	background: url(../img/bg3.png) repeat-x;
+	color: #454545;
+}
+.bg4{
+	background: url(../img/bg4.png) repeat-x;
+	color: #4b94bf;
+}
+.bg5{
+	background: url(../img/bg5.png) repeat-x;
+	color: #c82b34;
+}
+.bg6{
+	background: url(../img/bg6.png) repeat-x;
+	color: #b48e69;
+}
+.item .head{
+	height: 15px;
+	margin-bottom: 13px;
+	text-align: center;
+}
+.head .title{
+	font: 16px/15px "微软雅黑";
+}
+.container .up{
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #d8d8d8;
+}
+.up .hot_mv{
+	margin-bottom: 7px;
+}
+.hot_pic{
+	width: 136px;
+	height: 96px;
+	padding: 1px;
+	border: 1px solid #dcdcda;
+}
+.hot_info{
+	width: 140px;
+	height: 23px;
+	line-height: 23px;
+	color: #3d3d3d;
+	background: url(../img/ico-more.png) no-repeat 132px 7px;
+	word-spacing: -6px;
+}
+.hot_info .hot_name{
+	color: #3e3e3e;
+}
+.hot_info .hot_type{
+	display: inline-block;
+	font-size: 10px;
+	color: #b7b7b7;
+}
+.container .down{
+	padding: 11px 0;
+}
+.more{
+	margin-bottom: 4px;
+}
+.more .more_title{
+	height: 22px;
+	line-height: 22px;
+	word-spacing: -3px;
+}
+.more_title .more_name{
+	height: 22px;
+	color: #3e3e3e;
+}
+.more_title .more_type{
+	font-size: 12px;
+	line-height: 20px;
+	color: #a7a7a7;
+}
+.more .more_info{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #ababab;
+}

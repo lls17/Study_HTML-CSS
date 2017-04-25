@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 600px;
+				height: 50px;
+				border: 1px solid red;				
+			}
+			.one{
+				float: left;
+				border: 1px solid blue;
+				font-size: 18px;
+				line-height: 50px;
+			}
+			.two{
+				float: left;
+				border: 1px solid green;
+				font-size: 12px;
+				line-height: 98px;
+			}
+			.box2{
+				border: 1px solid orange;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.one1{
+				float: left;
+				border: 1px solid blue;
+				font-size: 18px;
+				line-height: 50px;
+				height: 18px;
+			}
+			.two1{
+				float: left;
+				border: 1px solid green;
+				font-size: 12px;
+				line-height: 98px;
+				height: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>1、one和two均未设置高度，父级DIV设高度。故即使因line-height显示超出父级高度height，但占用高度仍是父级的高度！</p>
+		<div class="box">
+			<strong>DIV- height：50px;</strong>
+			<span class="one">Span1- line-height: 50px;</span>
+			<span class="two">Span2- line-height: 98px;</span>
+		</div>
+		<!--<div class="box" style="float: left;">
+			<strong>我是第二个DIV！</strong>
+		</div>-->
+		<div class="box">
+			<strong>我是第二个DIV！</strong>
+		</div>
+		<hr />
+		
+		<p>2、父级DIV未设置高度，故父级高度由内容撑开。子级未设置高度，故子级高度height=行高line-height。进而父级高度=子级高度=子级行高</p>
+		<div class="box2 clearfix">
+			<strong>DIV- 无高</strong>
+			<span class="one">Span1- line-height: 50px;</span>
+			<span class="two">Span2- line-height: 98px;</span>
+		</div>
+		<div class="box">
+			<strong>我是第二个DIV！</strong>
+		</div>
+		<hr />
+		
+		<p>3、父级DIV未设置高度，子级设置高度，且子级line-height>height。则子级占位为height，进而父级高度=子级高度</p>
+		<div class="box2 clearfix">
+			<strong>DIV- 无高</strong>
+			<span class="one1">Span1- line-height: 50px; height: 18px; </span>
+			<span class="two1">Span2- line-height: 98px; height: 12px; </span>
+		</div>
+		<div class="box">
+			<strong>我是第二个DIV！</strong>
+		</div>
+		<hr />
+	</body>
+</html>

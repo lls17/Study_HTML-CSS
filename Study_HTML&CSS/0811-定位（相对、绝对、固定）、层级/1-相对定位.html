@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0px;
+			}
+			section{
+				border: 1px solid red;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+			}
+			.d1{
+				background-color: pink;
+			}
+			.d2{
+				background-color: yellow;
+				position: relative;
+				left: 100px;
+				top: 100px;
+			}
+			.d3{
+				background-color: mediumpurple;
+			}
+			.d4{
+				position: relative;
+				right:-50px;
+				top:0px;
+				background-color: pink;
+			}
+		</style>
+		<!--
+			position:relative;  相对定位
+				a、不影响元素本身的特性；
+				b、不使元素脱离文档流（元素移动之后原始位置会被保留）；移动元素会导致它覆盖其它框。
+				c、如果没有定位偏移量，对元素本身没有任何影响；
+				d、提升层级
+			
+			定位元素位置控制
+				top/right/bottom/left  定位元素偏移量
+			
+			相对定位是从元素原始位置开始计算偏移量的
+		-->
+	</head>
+	<body>
+		<p>1、相对定位relative，不脱离文档流，移动后原位置会被保留</p>
+		<p>2、不影响元素本身特性</p>
+		<section class="box">
+			<div class="d1"></div>
+			<div class="d2"></div>
+			<div class="d3"></div>
+		</section>
+		<hr />
+		
+		<p>3、相对于原位置，在指定方向上创建多少像素的空间。 —— 如果 left设置为 30 像素，那么会在元素左边创建 30 像素的空间，也就是将元素向右移动。</p>
+		<section style="width:100px;height:100px;border: 1px solid red;">
+			<div class="d4"></div>
+		</section>
+	</body>
+</html>

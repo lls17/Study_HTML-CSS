@@ -1,0 +1,116 @@
+body, h3{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.box{
+	width: 228px;
+	height: 461px;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	color: #999;
+	margin: 50px auto;
+}
+.box .head{
+	height: 37px;
+	padding: 0 14px;
+	margin: 1px 0;
+	line-height: 37px;
+	background-color: #f3f3f3;
+}
+.head .title{
+	float: left;
+	color: #393939;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.head .renew{
+	float: right;
+	color: #999;
+	line-height: 40px;
+}
+.box .container{
+	border-top: 1px solid #ddd;
+	width: 200px;
+	padding: 0 14px;
+}
+.container .item{
+	border-bottom: 1px dashed #cecece;
+	margin-top: 14px;
+	height: 87px;
+}
+.container .item.last{
+	border-bottom: none;
+}
+.container .item.first{
+	margin-top: 12px;
+	height: 90px;
+}
+.item .left{
+	float: left;
+	width: 43px;
+}
+.item .left .left_img{
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-bottom: 7px;
+}
+.item .left .left_follow{
+	float: left;
+	width: 43px;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 8px;
+	background: url(../img/bg_green.png) no-repeat;
+	color: #cbe577;
+}
+.item .right{
+	width: 147px;
+	padding: 0 5px;
+	line-height: 18px;
+}
+.right .self{
+	margin-bottom: 4px;
+	height: 20px;
+	line-height: 19px;
+	font-family: "微软雅黑";
+}
+.right .self .name{
+	float: left;
+	font-size: 10px;
+	color: #333;
+}
+.right .self .lv{
+	float: left;
+	display: inline-block;
+	margin: 5px 0 0 5px;
+	width: 16px;
+	height: 13px;
+	background: url(../img/ico_yx_v.png) no-repeat;
+}
+.right .info{
+	color: #5f80a9;
+}
+.right .news{
+	color: #999;
+	word-spacing: -2px;
+}

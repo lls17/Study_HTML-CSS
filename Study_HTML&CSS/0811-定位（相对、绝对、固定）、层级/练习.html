@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0px;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			.box1, .box2, .box3{
+				width: 150px;
+				height: 150px;
+				border: 1px solid red;
+				margin: 50px auto;
+				position: relative;
+			}
+			.box1 a{
+				/* 绝对定位后视为“块”属性元素，可设置宽高。 而相对定位则不影响原元素属性！*/
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: coral;
+			}
+			.box1 a:hover{
+				background-color: orangered;
+			}
+			.up_left{
+				up: 0;
+				left: 0;
+			}
+			.up_right{
+				/*无论盒子大小如何改变，紧贴右上*/
+				right: 0;
+				top: 0;
+			}
+			.center{
+				left: 50%;
+				top: 50%;
+				margin-left: -50%;
+				
+			}
+			.down_left{
+				/*无论盒子大小如何改变，紧贴左下*/
+				left: 0;
+				bottom: 0;
+			}
+			.down_right{
+				bottom: 0;
+				right: 0;
+			}
+			
+			.box2 span{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: coral;
+				left: 25px;
+				top: 25px;
+				cursor: auto;
+			}
+			.box2 span:hover{
+				background-color: orangered;
+			}
+			
+			.box3 span{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: coral;
+				cursor: auto;
+			}
+			.box3 .sp2{
+				left: 25px;
+				top: 25px;
+			}
+			.box3 .sp3{
+				left: 50px;
+				top: 50px;
+			}
+			.box3 .sp4{
+				left: 75px;
+				top: 75px;
+			}
+			.box3 .sp5{
+				left: 100px;
+				top: 100px;
+			}
+			.box3 span:hover{
+				background-color: orangered;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>绝对的角位置，无论盒子大小怎么变</h3>
+		<section class="box1">
+			<a href="" class="up_left"></a>
+			<a href="" class="up_right"></a>
+			<a href="" class="center"></a>
+			<a href="" class="down_left"></a>
+			<a href="" class="down_right"></a>
+		</section>
+		<hr />
+		
+		<section class="box3">
+			<span class="sp1"></span>
+			<span class="sp2"></span>
+			<span class="sp3"></span>
+			<span class="sp4"></span>
+			<span class="sp5"></span>
+		</section>
+		<hr />
+		
+		<h3>嵌套时，:hover会传递</h3>
+		<section class="box2">
+			<span>
+				<span>
+					<span>
+						<span>
+							<span></span>
+						</span>
+					</span>
+				</span>
+			</span>
+		</section>
+	</body>
+</html>

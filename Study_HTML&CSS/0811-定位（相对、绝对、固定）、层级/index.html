@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+			}
+			.d1{
+				background-color: pink;
+			}
+			.d2{
+				background-color: greenyellow;
+				display: none;
+			}
+			.d3{
+				background-color: yellow;
+			}
+			
+			.box{
+				width: 110px;
+				height: 164px;
+				position: relative;
+			}
+			.box .img_info{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 30px;
+				width: 100%;
+			}
+			.img_info .info_bg{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: #fff;
+				opacity: 0.7;
+				filter: alpha(opacity=70);
+			}
+			.img_info .info_text{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				font-size: 12px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<p>1、display:none;时，即没有框，不占用文档空间。达到隐藏效果。</p>
+		<div class="d1">DIV 1</div>
+		<div class="d2">DIV 2</div>
+		<div class="d3">DIV 3</div>
+		<hr />
+		
+		<div class="box">
+			<img src="img/db1.png"/>
+			<div class="img_info">
+				<span class="info_bg"></span>
+				<span class="info_text">教你一本~鸳鸯谱！</span>
+			</div>
+		</div>
+	</body>
+</html>

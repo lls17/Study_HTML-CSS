@@ -1,0 +1,80 @@
+body{
+	margin: 0px;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+
+.box{
+	width: 941px;
+	height: 592px;
+	border-top: 1px solid #05a790;
+	margin: 50px auto;
+	font-size: 12px;
+}
+.box .item{
+	width: 217px;
+	height: 284px;
+	padding: 11px 0 0 17px;
+	border: 1px solid #dfdedd;
+	border-top: none;
+	float: left;
+	margin-right: -1px;
+	background: url(../img/bg_dd.png) repeat-x;
+}
+.item .item_pic{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 6px;
+}
+.item .item_info{
+	float: left;
+	margin-left: 5px;
+	line-height: 18px;
+	color: #404040;
+	width: 192px;
+	word-spacing: -3px;
+	word-break: break-all;
+}
+.item_info .info_num{
+	font-family: arial;
+}
+.item_price{
+	float: left;
+	font: 16px/26px "微软雅黑";
+	font-weight: bold;
+	height: 26px;
+	width: 187px;
+	color: #cc0000;
+}
+.item_price .price_last{
+	font-size: 10px;
+}
+.item_oldPrice{
+	float: left;
+	font: 10px/12px "微软雅黑";
+	height: 12px;
+	width: 187px;
+	color: #878787;
+	text-decoration: line-through;
+}
+.item .item_buy{
+	float: right;
+	width: 30px;
+	height: 22px;
+	padding-left: 26px;
+	margin-top: -18px;
+	line-height: 24px;
+	color: #404040;
+	background: url(../img/ico_buy.png) no-repeat;
+}

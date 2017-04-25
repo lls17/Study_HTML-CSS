@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0px;
+			}
+			
+			.box{
+				margin: 50px auto;
+				width: 500px;
+				height: 300px;
+				border: 1px solid red;
+				position: relative;
+			}
+			div{
+				height: 50px;
+				width: 50px;
+				
+				/*position: relative;*/
+				position: absolute;
+				left: 25px;
+				top: 25px;
+			}
+			.d1{
+				background-color: red;
+			}
+			.d2{
+				background-color: yellow;
+			}
+			.d3{
+				background-color: dodgerblue;
+			}
+			.d4{
+				background-color: greenyellow;
+			}	
+		</style>
+	</head>
+	<body>
+		<h3>1、嵌套结构</h3>
+		<section class="box">
+			<div class="d1">
+				<div class="d2">
+					<div class="d3">
+						<div class="d4"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		
+		<h3>2、兄弟结构</h3>
+		<section class="box">
+			<div class="d1"></div>
+			<div class="d2"></div>
+			<div class="d3"></div>
+			<div class="d4"></div>
+		</section>
+	</body>
+</html>
