@@ -1,0 +1,88 @@
+body, h3, dl, dd{
+	margin: 0px;
+}
+a{
+	text-decoration: none;	
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.box{
+	margin: 50px auto;
+	width: 679px;
+	height: 447px;
+	border: 1px solid #d9d9d9;
+	border-right: none;
+}
+.head{
+	width: 636px;
+	height: 26px;
+	border-right: 1px solid #e4e4e4;
+	padding: 16px 24px 0px 19px;
+}
+.head .title_pic{
+	text-indent: -999px;
+	background: url(../img/logo.png) no-repeat;
+	height: 26px;
+	width: 86px;
+	float: left;
+}
+.head .type_list{
+	float: left;
+	font: normal 14px/12px "微软雅黑";
+	color: #1a1a1a;
+	height: 12px;
+	width: 536px;
+	margin-top: 14px;
+}
+.head .type_list a{
+	color: #1a1a1a;
+}
+.head .type_list dt{
+	float: left;
+	margin-left: 14px;
+}
+.head .type_list dd{
+	float: left;
+	margin-left: 18px;
+}
+.head .type_list dd.fr{
+	float: right;
+}
+.head .type_list dd.more{
+	width: 37px;
+	background: url(../img/more.png) no-repeat right;
+}
+.container{
+	width: 641px;
+	border-right: 1px solid #e4e4e4;
+	padding: 0px 19px 25px 19px;
+	float: left;
+}
+.container .item{
+	float: left;
+	margin-top: 20px;
+	height: 170px;
+}
+.item li{
+	float: left;
+	width: 112px;
+	margin-left: 20px;
+}
+.item li.first{
+	margin-left: 0px;
+}
+.item li img{
+	float: left;
+}
+.item li strong{
+	float: left;
+	margin-top: 8px;
+	font-size: 12px;
+	font-weight: normal;
+	height: 12px;
+	color: #1a1a1a;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+		    float浮动特点：
+		    	1、脱离文档流
+				2、块在一行显示
+		   		3、行内元素支持宽高
+		   	 	4、默认内容撑开宽度
+		-->
+		<style>
+			body{
+				margin: 0;
+			}
+			span{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+			#div1{
+				background-color: red;
+			}
+			#div2{
+				background-color: green;
+				float: left;
+			}
+			#div3{
+				float: left;
+				/*margin-top: 10px;*/
+				background-color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<span id="div1">span1</span>
+		<span id="div2"></span>
+		<span id="div3"></span>
+	</body>
+</html>

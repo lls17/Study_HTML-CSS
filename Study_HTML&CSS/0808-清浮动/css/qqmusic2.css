@@ -1,0 +1,93 @@
+body, h3{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.box{
+	width: 713px;
+	height: 400px;
+	padding: 20px 30px 0 13px;
+	font-size: 12px;
+}
+.head{
+	border-left: 5px solid #ff7800;
+}
+.head .title{
+	height: 30px;
+	width: 92px;
+	text-indent: -999px;
+	background: url(../img/logo2.png) no-repeat;
+	float: left;
+	margin-left: 10px;
+}
+.head .more{
+	font: 14px/20px "微软雅黑";
+	font-weight: bold;
+	letter-spacing: 1px;
+	height: 20px;
+	color: #0f820c;
+	float: left;
+	margin-left: 13px;	
+	margin-top: 10px;
+}
+.container{
+	margin-right: -20px;
+}
+.container .item{
+	float: left;
+	width: 160px;
+	margin: 18px 20px 0 0;
+}
+.item .item_pic{
+	display: block;
+	width: 160px;
+	height: 90px;
+}
+.item .item_info{
+	height: 32px;
+	line-height: 32px;
+	word-spacing: -3px;
+}
+.item_info .info_name a{
+	color: #0f820c;
+}
+.item_info .info_break{
+	color: #8b8b8b;
+}
+.item_info .info_signer a{
+	color: #515151;
+}
+.item .item_title{
+	height: 14px;
+	line-height: 14px;
+	color: #8b8b8b;
+}
+.item .item_tag{
+	height: 12px;
+	font: 10px/12px "微软雅黑";
+	padding: 10px 0 8px;
+	color: #a3a3a3;
+}
+.item_tag .tag_cnt{
+	float: left;
+}
+.tag_cnt .cnt_pic{
+	width: 8px;
+	height: 12px;
+}
+.item_tag .tag_time{
+	float: right;
+}
+

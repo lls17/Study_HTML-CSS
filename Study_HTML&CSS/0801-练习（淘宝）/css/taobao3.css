@@ -1,0 +1,141 @@
+/*css reset*/
+body, h3, dl, dd{
+	margin: 0px;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.box{
+	width: 891px;
+	height: 260px;
+	/* 解决inline-block后，两个行内块之间空格（回行解析）的间隙问题*/
+	font-size: 0px;
+}
+/*主题*/
+.item{
+	width: 444px;
+	height: 258px;
+	border: 1px solid #e8e8e8;
+	display: inline-block;
+	vertical-align: top;
+	/* 让两个相邻border的重合成一条*/
+	margin-right: -1px;
+	font-size: 12px;
+}
+/*标题部分*/
+.head{
+	height: 20px;
+	border-left: 2px solid #ff4400;
+	margin: 15px -1px 0px 0px;
+	padding: 2px 0px 0px 12px;
+	word-spacing: -3px;
+}
+.head h3{
+	display: inline-block;
+	font: normal 14px/20px "微软雅黑";
+	letter-spacing: 1px;
+}
+.head .head_title{
+	display: inline-block;
+	width: 103px;
+	height: 18px;
+	padding: 2px 0px 0px 12px;
+	line-height: 18px;
+}
+.bg1{
+	background: url(../img/head-tips.jpg) no-repeat;
+}
+.bg2{
+	background: url(../img/head_title2.png) no-repeat;
+}
+/*主体部分*/
+.container{
+	width: 422px;
+	height: 205px;
+	padding: 16px 7px 0px 15px;
+}
+.up{
+	height: 80px;
+	width: 422px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #eee;
+	word-spacing: 28px;
+}
+.up li{
+	display: inline-block;
+	vertical-align: top;
+	width: 190px;
+	word-spacing: 2px;
+}
+.up li a{
+	display: inline-block;
+	vertical-align: top;
+}
+.up li .pic{
+	/*注意：给img外面的a设置宽、高来划分超链接的范围*/
+	width: 100px;
+	height: 80px;
+}
+.up li .pic_one{
+	width: 190px;
+	height: 80px;
+}
+.up li .pic_info{
+	width: 82px;
+	height: 72px;
+	padding: 4px 0px;
+	line-height: 24px;
+	font-size: 12px;
+}
+.pic_info strong{
+	display: block;
+	width: 82px;
+	color: #6c6c6c;
+	font-weight: normal;
+}
+.pic_info em{
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+.down{
+	height: 90px;
+	width: 427px;
+	padding: 7px 17px 11px 0px;
+}
+.down a{
+	color: #3c3c3c;
+}
+.down dl{
+	display: inline-block;
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	word-spacing: 6px;
+}
+.down dt, .down dd{
+	display: inline-block;
+}
+.down dt{
+	font-weight: bold;
+}
+.down dd{
+	word-spacing: 3px;
+}
+.mr28{
+	margin-right: 28px;
+}
+a.hot{
+	color: #ff4400;
+}

@@ -1,0 +1,118 @@
+body,h3,dl,dd{
+	margin: 0px;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.box{
+	width: 891px;
+	height: 260px;
+	font-size: 12px;
+}
+.item{
+	width: 444px;
+	height: 258px;
+	float: left;
+	margin-right: -1px;
+	border: 1px solid #e8e8e8;
+}
+.item .head{
+	height: 22px;
+	margin-top: 15px;
+	border-left: 2px solid #ff4400;
+	margin-left: -1px;
+}
+.head .title{
+	padding-left: 13px;
+	padding-top: 2px;
+	font: bold 14px/20px "微软雅黑";
+	color: #3c3c3c;
+	letter-spacing: 1px;
+	float: left;
+}
+.head .head_title{
+	float: left;
+	width: 114px;
+	margin: 2px 0 0 4px;
+	padding: 2px 0 0 11px;
+	font: normal 12px/18px "宋体";
+	color: #c65c22;
+}
+.head .bg1{
+	background: url(../img/head-tips.jpg) no-repeat;
+}
+.container{
+	width: 422px;
+	padding: 16px 7px 0 15px; 
+}
+.container .up{
+	height: 96px;
+	border-bottom: 1px solid orange;
+	margin-right: -34px;
+}
+.container .up li{
+	float: left;
+	height: 80px;
+	width: 190px;
+	margin-right: 34px;
+}
+li .pic, li .pic_info{
+	float: left;
+}
+li .pic{
+	width: 100px;
+	height: 80px;
+}
+li .pic_info{
+	width: 82px;
+	margin-left: 8px;
+}
+.pic_info strong{
+	display: inline-block;
+	font-weight: normal;
+	margin-top: 4px;
+	color: #6c6c6c;
+	line-height: 24px;
+}
+.pic_info em{
+	display: inline-block;
+	font-style: normal;
+	font-weight: bold;
+	margin-bottom: 2px;
+	color: #666;
+	height: 24px;
+	line-height: 24px;
+}
+.down{
+	height: 90px;
+	padding: 7px 11px 11px 0;
+	margin-right: -31px;
+}
+.down dl{
+	float: left;
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 31px;
+}
+.down dt{
+	float: left;
+	margin-right: 13px;
+}
+.down dt a{
+	color: #3c3c3c;
+	font-weight: bold;
+}
+.down dd{
+	float: left;
+	margin-right: 10px;
+}
+.down dd a{
+	color: #3c3c3c;
+}

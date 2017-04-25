@@ -1,0 +1,87 @@
+body, h3{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.box{
+	width: 640px;
+	height: 431px;
+	padding: 16px 19px 0px;
+	border: 1px solid #d9d9d9;
+	font-size: 12px;
+	margin: 50px auto;
+}
+.head{
+	height: 26px;
+	/*margin-bottom: 20px;*/
+}
+.head .title{
+	height: 26px;
+	width: 86px;
+	text-indent: -999px;
+	background: url(../img/logo.png) no-repeat;
+	/*兄弟元素浮动时，同级兄弟都要浮动起来~ ！！且父级一定要设置高度，以防父级高度塌陷！*/
+	float: left;
+}
+.head .tv_type{
+	float: left;
+	padding-top: 10px;
+	margin-left: 14px;
+	word-spacing: 12px;
+}
+.head .more{
+	/*display: inline-block;*/
+	float: right;
+	width: 37px;
+	line-height: 10px;
+	padding-top: 14px;
+	margin-right: 4px;
+	background: url(../img/more.png) no-repeat right bottom;
+	font-family: "微软雅黑";
+	color: #6e6e6e;
+}
+.tv_type a{
+	font: 14px "微软雅黑";
+	color: #1a1a1a;
+}
+.container{
+	height: 385px;
+	padding-top: 20px;
+	margin-right: -20px;
+}
+.container li{
+	float: left;
+	width: 112px;
+	/*margin-top: 20px;*/   /*会发生传递到父级的现象*/
+	margin: 0 20px 20px 0;
+}
+.container li strong{
+	font: normal 12px "宋体";
+	color: #1a1a1a;
+}
+/*.container{
+	height: 385px;
+	margin-right: -20px;
+}
+.container li{
+	float: left;
+	width: 112px;
+	line-height: 32px;
+	margin-right: 20px;
+	margin-bottom: 9px;
+}
+.container li strong{
+	font: normal 12px "宋体";
+	color: #1a1a1a;
+}*/

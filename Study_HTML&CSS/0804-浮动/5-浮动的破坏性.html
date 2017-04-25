@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			当全部子级均浮动时，父级高度为0，破坏了布局
+		-->
+		<style>
+			body{
+				margin: 0;
+			}
+			#div1{
+				height: 100px;
+			}
+			#div1, #div2{
+				border: 10px solid pink;
+			}
+			.item1, .item2{
+				width: 100px;
+				height: 100px;
+				background-color: paleturquoise;
+			}
+			.item1{
+				float: left;
+			}
+			.item2{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div class="item1">item1</div>
+			<div class="item2">item2</div>
+		</div>
+		<div id="div2">
+			div2
+		</div>
+	</body>
+</html>

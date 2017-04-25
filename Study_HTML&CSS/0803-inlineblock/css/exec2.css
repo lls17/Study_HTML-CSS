@@ -1,0 +1,90 @@
+/* reset */
+body, h3, h4{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #444;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+/* 主体部分 */
+body{
+	font: 12px '宋体';
+}
+#box{
+	width: 260px;
+	margin: 0px auto;
+	background-color: #f7f7f7;
+}
+.head{
+	height: 34px;
+	padding-top: 4px;
+}
+.head .title{
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+	background: url(../img/title.jpg) no-repeat;
+	text-indent: -9999px;
+	margin-right: 3px;
+}
+.head .sub_title{
+	font-weight: bold;
+	color: #6c6c6c;
+	font-family: "微软雅黑";
+}
+.content{
+	border: 1px solid #e8e8e8;
+}
+.item{
+	padding: 8px 14px 16px;
+	background-color: #fff;
+	border-bottom: 1px solid #e8e8e8;
+}
+.item_title{
+	line-height: 30px;
+	font-family: "Hiragino Sans GB";
+}
+.item_tag{
+	color: #6c6c6c;
+	height: 14px;
+	line-height: 14px;
+}
+.tag_line{
+	color: #eaeaea;
+	font-size: 14px;
+	margin: 0 1px 0 -3px;
+}
+.item_list{
+	padding-top: 12px;
+	word-spacing: 4px;
+}
+.item_list li{
+	display: inline-block;
+}
+.noBorder{
+	border: none;
+}
+.foot{
+	height: 37px;
+	background-color: #e9e9e9;
+	color: #6c6c6c;
+	cursor: pointer;
+}
+.foot:hover{
+	color: orangered;
+}
+.foot .pic{
+	margin: 10px 3px 0 88px;
+}
+.foot_text{
+	line-height: 40px;
+}

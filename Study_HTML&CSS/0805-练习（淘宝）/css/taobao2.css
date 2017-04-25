@@ -1,0 +1,104 @@
+body, h3{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.box{
+	width: 1189px;
+	height: 365px;
+	font-size: 12px;
+}
+a{
+	color: #3c3c3c;
+}
+.item{
+	width: 169px;
+	height: 352px;
+	padding: 13px 14px 0;
+	border: 1px solid #e8e8e8;
+	float: left;
+	margin-right: -1px;
+}
+.head{
+	height: 16px;
+	margin-bottom: 12px;
+}
+.head .title{
+	font: 16px/16px "微软雅黑";
+	float: left;
+}
+.head .title_pic{
+	float: left;
+	margin: 3px 0 0 4px;
+}
+.up{
+	height: 150px;
+	background-color: #f5f5f5;
+	text-align: center;
+}
+.up strong{
+	display: block;
+	margin-top: 4px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.up em{
+	display: block;
+	margin-bottom: 8px;
+	font-style: normal;
+	line-height: 12px;
+	color: #9c9c9c;
+}
+.down{
+	height: 102px;
+	margin-top: 13px;
+	margin-right: -9px;
+}
+.down li{
+	float: left;
+	width: 80px;
+	margin-right: 9px;
+	text-align: center;
+}
+.down li strong{
+	font-weight: normal;
+	line-height: 32px;
+}
+.nav{
+	height: 18px;
+	line-height: 18px;
+	word-spacing: -1px;
+}
+
+.nav .break{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 1px;
+	width: 1px;
+	height: 14px;
+	background: url(../img/ico-break.png) no-repeat;
+}
+.foot{
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 5px;
+	word-spacing: 2px;
+}
+.foot .foot_hot{
+	word-spacing: -2px;
+	color: #e6e6e6;
+}
+.foot .hot{
+	color: #ff4400;
+}

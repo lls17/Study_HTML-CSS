@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				/*height: 200px;*/
+				border: 10px solid red;
+			}
+			#content, #content2{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+			#content{
+				float: left;
+			}
+			#content2{
+				float: right;
+			}
+			#box2{
+				border: 10px solid palegreen;
+			}
+			.clear{
+				width: 10px;
+				height: 10px;
+				background-color: black;
+				clear:left;
+			}
+		</style>
+		<!--
+			clear:left | right | both | none | inherit；元素的某个方向上不能有浮动元素
+			clear:both;  在左右两侧均不允许浮动元素。
+			
+			将浮动带来的问题（父级高度塌陷）给进行重置（解决）
+		-->
+	</head>
+	<body>
+		<div id="box">
+			<div id="content"></div>
+			<div id="content2"></div>
+			<!--将浮动带来的问题（父级高度塌陷）给进行重置（解决）-->
+			<div class="clear"></div>
+		</div>
+		<div id="box2"></div>
+	</body>
+</html>

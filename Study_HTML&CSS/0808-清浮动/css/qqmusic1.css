@@ -1,0 +1,159 @@
+body, h3{
+	margin: 0px;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*公用样式组*/
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*主体*/
+.box{
+	/*浮动问题解决方案1：给父级加高*/
+	/*height: 483px;*/  
+	width: 332px;
+	padding: 25px 16px 0 19px;
+	font-size: 14px;
+}
+.head{
+	/*height: 30px;*/
+	width: 327px;
+	border-left: 5px solid #8bcc00;
+}
+.head .title_logo{
+	float: left;
+	text-indent: -999px;
+	margin-left: 10px;
+	width: 111px;
+	height: 30px;
+	background: url(../img/logo.png) no-repeat;
+}
+.head .title_action{
+	float: left;
+	margin-left: -2px;
+}
+.title_action li{
+	float: left;
+	margin-left: 10px;
+}
+.title_action li a{
+	text-indent: -999px;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+.play{
+	background: url(../img/play.png) no-repeat;
+}
+.add{
+	background: url(../img/add.png) no-repeat;
+}
+.head .title_type{
+	float: left;
+	margin-left: 23px;
+	margin-right: -8px;
+	height: 30px;
+	font: 12px/30px "宋体";
+}
+.title_type a{
+	color: #0f820c;
+}
+.title_type a.cur{
+	color: #333;
+	font-weight: bold;
+}
+.title_type li{
+	float: left;
+}
+.title_type li.break{
+	height: 28px;
+	font: 12px/28px "宋体";
+	color: #d8d8d8;
+	margin: 2px 6px 0 5px;
+}
+/* mc list*/
+.container{
+	padding-top: 11px;
+}
+.container .item{
+	float: left;
+	height: 35px;
+	width: 332px;
+	line-height: 36px;
+	/* 先给个与背景色同色的下边框，以便用于鼠标悬浮时的样式转换*/
+	border-bottom: 1px solid #fff;
+}
+/* 鼠标悬浮的样式*/
+.container .item:hover{
+	border-bottom: 1px dashed #e1e1e1;
+}
+.container .item:hover .mc_name{
+	color: #05b600;
+}
+.container .item:hover .mc_time{
+	display: none;
+}
+.container .item:hover .mc_action{
+	display: inline-block;
+}
+.container .item .mc_info{
+	float: left;
+}
+.container .item .mc_time{
+	float: right;
+	font: 10px/36px "微软雅黑";
+	color: #8b8b8b;
+}
+.container .item .mc_action{
+	display: none;
+	float: right;
+	height: 12px;
+	width: 100px;
+	margin: 12px 0;
+}
+.item .mc_action li{
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-left: 8px;
+}
+.item .mc_action li a{
+	display: inline-block;
+	text-indent: -999px;
+	height: 12px;
+	width: 12px;
+}
+.mc_play{
+	background: url(../img/ico_play.png) no-repeat;
+}
+.mc_add{
+	background: url(../img/ico_add.png) no-repeat;
+}
+.mc_heart{
+	background: url(../img/ico_heart.png) no-repeat;
+}
+.mc_star{
+	background: url(../img/ico_star.png) no-repeat;
+}
+.mc_action li a.mc_share{
+	background: url(../img/ico_share.png) no-repeat;
+}
+.mc_info .mc_name{
+	color: #0f820c;
+}
+.mc_info .break{
+	color: #8b8b8b;
+}
+.mc_info .mc_singer{
+	color: #515151;
+}
+

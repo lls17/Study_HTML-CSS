@@ -1,0 +1,123 @@
+body, h3, dl, dd{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+
+body{
+	/*解决inline-block后的空格（回行解析）引起的间隙问题*/
+	font-size: 0;
+}
+#box{
+	width: 891px;
+	height: 260px;
+	margin: 50px auto;
+}
+
+#box .item{
+	display: inline-block;
+	width: 444px;
+	height: 258px;
+	border: 1px solid #999;
+	margin-right: -1px;
+	/*margin-right: -7px;*/
+	vertical-align: top;
+	font-size: 12px;
+}
+/*.item .head{
+	height: 22px;
+}*/
+.item .head h3{
+	display: inline-block;
+	height: 20px;
+	border-left: 2px solid #ff4400;
+	margin: 15px 0 0 -1px;
+	padding: 2px 0 0 12px;
+	font: bold 14px/20px "微软雅黑";
+}
+.item .head .tips{
+	display: inline-block;
+	width: 103px;
+	height: 18px;
+	padding-top: 2px;
+	padding-left: 12px;
+	background: url(../img/head-tips.jpg) no-repeat;
+	color: #c65c22;
+	line-height: 18px;
+	margin-left: -3px;
+}
+.item .content{
+	width: 422px;
+	height: 205px;
+	padding: 16px 7px 0 15px;
+}
+.content .content_list{
+	word-spacing: 28px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #999;
+}
+.content .content_list li{
+	display: inline-block;
+	width: 190px;
+	height: 80px;
+	vertical-align: top;
+	word-spacing: 1px;
+}
+.content_list li a{
+	display: inline-block;
+	vertical-align: top;
+}
+.content_list li .img_box{
+	width: 100px;
+	height: 80px;
+}
+.content_list li .info_box{
+	width: 83px;
+	height: 76px;
+	line-height: 24px;
+	padding-top: 4px;
+	color: #6c6c6c;
+}
+.info_box span{
+	color: #3c3c3c;
+	font-weight: bold;
+}
+.content .content_type{
+	padding-top: 7px;
+}
+.content_type dl{
+	display: inline-block;
+	width: 190px;
+	line-height: 30px;
+}
+.content_type dt{
+	margin-right: 6px;
+}
+.content_type dt a{
+	font-weight: bold;
+}
+.content_type a{
+	color: #3c3c3c;
+}
+.content_type dt, .content_type dd{
+	display: inline-block;
+}
+.content_type dd{
+	word-spacing: 3px;
+}
+.mr28{
+	margin-right: 28px;
+}
+.content_type .active{
+	color: #ff4400;
+}

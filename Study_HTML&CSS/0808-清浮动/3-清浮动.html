@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*html{	
+				float: left;
+			}
+			body{
+				float: left;
+			}*/
+			#box{
+				/*height: 200px;*/
+				border: 10px solid red;
+				/*float: left;*/
+			}
+			#content, #content2{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+			#content{
+				float: left;
+			}
+			#content2{
+				float: right;
+			}
+			#box2{
+				border: 10px solid palegreen;
+			}
+			.qingfudong{
+				display: block;
+				clear: both;
+			}
+			.clearfix{
+				clear: both;
+				/*display: block;*/
+			}
+		</style>
+		<!--
+			清浮动？
+			为什么：解决浮动元素父级包不住浮动元素的问题。
+			
+			1、父级加高度 
+				问题：扩展性不好
+			2、子级空标签清浮动
+				问题：
+					IE6 最小高度 19px；（解决后IE6下还有2px偏差）
+					还必须是块属性（注意行内属性不行）
+			3、br清浮动
+				问题：不符合工作中：结构、样式、行为，三者分离的要求。
+			4、父级display: inline-block;
+			5、以浮制浮：导致浮动冒泡
+			6、伪类after清浮动(目前最方便问题最少的)
+
+		-->
+	</head>
+	<body>
+		<div id="box">
+			<div id="content"></div>
+			<div id="content2"></div>
+			<span class="clearfix"></span>
+		</div>
+		<!--<div id="box2"></div>-->
+	</body>
+</html>

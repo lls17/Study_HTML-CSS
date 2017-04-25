@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			文档流
+			文档流是文档中可显示对象在排列时所占用的位置。
+			将窗体自上而下分成一行行, 并在每行中按从左至右的顺序排放元素,即为文档流.
+			
+			float 浮动
+				浮 -> 脱离文档流
+		-->
+		<style>
+			body{
+				margin: 0;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+			#div1{
+				background-color: red;
+			}
+			#div2{
+				background-color: green;
+				float: left;
+			}
+			#div3{
+				float: left;
+				/*margin-top: 10px;*/
+				background-color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</body>
+</html>

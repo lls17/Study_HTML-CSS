@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				/*height: 200px;*/
+				border: 10px solid red;
+			}
+			#content, #content2{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+			#content{
+				float: left;
+			}
+			#content2{
+				float: right;
+			}
+			#box2{
+				border: 10px solid palegreen;
+			}
+		</style>
+		<!--
+			1、浮动元素的父级一定要包裹住浮动元素（给父级设置高度）
+			2、同级元素中有一个浮动，那么同级元素全部都要浮动（兄弟元素一浮全浮）
+		-->
+	</head>
+	<body>
+		<div id="box">
+			<div id="content"></div>
+			<div id="content2"></div>
+		</div>
+		<div id="box2"></div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				background-color: pink;
+				height: 30px;
+				border-bottom:1px solid #fff
+			}
+			li:hover{
+				border-bottom: 1px solid red;
+			}
+			.left{
+				width: 100px;
+				height: 30px;
+				background-color: black;
+				float: left;
+			}
+			.right{
+				width: 100px;
+				height: 30px;
+				background-color: peru;
+				float: right;
+			}
+			.btn_box{
+				width: 100px;
+				height: 30px;
+				background-color: palegreen;
+				float: right;
+				display: none;
+			}
+			li:hover .btn_box{
+				display: block;
+			}
+			li:hover .right{
+				display: none;
+			}
+		</style>
+		<!--
+			display: none; 不显示（隐藏）
+			display的值不为none;都是显示
+		-->
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div class="left"></div>
+				<div class="right"></div>
+				<div class="btn_box"></div>
+			</li>
+		</ul>
+	</body>
+</html>

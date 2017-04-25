@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				/* 问题2：解决inline-block后，容器间的间隙问题*/
+				font-size: 0px;
+			}
+			div{
+				font-size: 12px;
+				width: 100px;
+				height: 100px;
+				/* 设置为行内块元素，一行显示*/
+				display: inline-block;
+				/* 问题1：解决当inline-block内容大小不一致时，有错位（掉下）的情况*/
+				vertical-align: top;
+				/* 问题3：让相邻border重合*/
+				margin-right: -4px;
+			}
+			
+			.dpink{
+				background-color: lightpink;
+				border: 4px solid deeppink;
+				zoom: 1px;
+			}
+			.dblue{
+				background-color: powderblue;
+				border: 4px solid blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dpink">我是一个粉刷匠</div>
+		<div class="dblue">粉刷本领强</div>
+		<hr />
+		<section style="font-size:12px;">
+			如下两种方法控制inline-block元素间的距离：  <br />
+			* 元素间的margin  <br />
+			* 父级元素的word-spacing <br />
+			注：当父级元素下的font-size=0px时，子级元素无间距，但注意同事子级的文字内容不显示（因font-size为0）。
+		</section>
+	</body>
+</html>
