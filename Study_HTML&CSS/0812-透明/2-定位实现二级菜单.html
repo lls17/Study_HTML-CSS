@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				
+				display: none;
+				position: absolute;
+				top: 60px;
+				left: 40px;
+				/* 注意：绝对定位时，要给宽高，否则由子级撑开 */
+				/*width: 100%;*/
+			}
+			.it em{
+				position: relative;
+			}
+			.item a{
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				background-color: pink;
+				/* 如下控制文字在水平和垂直方向均居中*/
+				line-height: 40px;
+				text-align: center;
+			}
+			.item:hover ul{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="item">
+			<a href="">省份选择</a>
+			<ul>
+				<li>北京</li>
+				<li>黑龙江</li>
+				<li>山东省</li>
+			</ul>
+		</nav>
+	</body>
+</html>

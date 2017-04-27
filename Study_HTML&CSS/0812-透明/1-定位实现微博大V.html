@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			
+			.box{
+				width: 300px;
+				border: 1px solid red;
+			}
+			.name{
+				position: relative;
+			}
+			.name .lv_v{
+				/* 1、因要基于name便宜，故大V要嵌套在name里！*/
+				/* 2、因name长短不一，故大V的left为负值！*/
+				position: absolute;
+				left: -16px;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="box">
+			<div class="self">
+				<a href="" class="name">
+					Papi酱~
+					<img src="img/ico_v.png" alt="" class="lv_v"/>
+				</a>
+			</div>
+			<div class="info">
+				我是一个集外貌与智慧于一身的女子~
+			</div>
+		</section>
+	</body>
+</html>

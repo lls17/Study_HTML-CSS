@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			table 表格
+			thead 表格头
+			tbody 表格主体
+			tr 表格行
+			th 元素定义表头
+			td 元素定义表格单元
+			
+			<table border="1">  不建议使用，结构与样式分离
+				
+			table{border-collapse:collapse;} 单元格间隙合并
+			th,td{padding:0;}重置单元格默认填充
+
+		-->
+		<style>
+			/*table{
+				border: 1px solid blue;
+				border-collapse: collapse;
+			}
+			th{
+				border: 1px solid red;
+			}
+			td{
+				border: 1px solid green;
+				text-align: center;
+			}
+			td, th{
+				padding: 5px;
+			}*/
+			
+			/*tr 边框无效果*/
+			/*tr{
+				border: 1px solid yellow;
+			}*/
+			
+			/*table{
+				border: none;
+				border-collapse: collapse;
+				border-spacing: 0;
+			}*/
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<th>指标</th>
+				<th>宋妈妈</th>
+				<th>刘小望</th>
+				<th>李小莎</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>性别</td>
+					<td>女</td>
+					<td>男</td>
+					<td>女</td>
+				</tr>
+				<tr>
+					<td>年龄</td>
+					<td>50</td>
+					<td>29</td>
+					<td>28</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

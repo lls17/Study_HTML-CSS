@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			form 表单
+				所有的表单元素必须放在form里面
+				
+			form   表单
+				<input type="……" name="" value="" /> 
+				text           文本框
+				password       密码
+				radio          单选
+				checkbox       复选
+				submit         提交
+				reset          重置
+				button         按钮
+				image          图片
+				file           上传
+				hidden         隐藏
+			
+			name 是表单元素的名称（传递给后端的字段）
+			value是表单元素的值（传递给后端你的值）,一般都是用户输入的
+			
+			label  标签为 input 元素定义标注
+			<input type="checkbox" name="" id="a"/>
+			<label for="a">……</label>
+				
+			checked  在页面加载时默认选定的 input 元素。
+			<input type="checkbox" name="" checked/>
+			
+			disabled  属性规定应该禁用 input 元素。
+			<input type="checkbox" name="" disabled/>
+			
+			select/option 下拉选框
+			对高度的支持不兼容；
+			
+			textarea      文本域
+			各个浏览器下的默认滚动条显示不兼容
+
+		-->
+		<style>
+			/*input{
+				border: 1px solid red;
+				height: 50px;
+			}*/
+		</style>
+	</head>
+	<body>
+		<form action="" method="get">
+			<div>
+				<label for="userName">
+					姓名：
+				</label>
+				<input type="text" id="userName" name="user_name" value="" disabled />
+			</div>
+			<div>
+				<label for="pw">
+					密码：
+				</label>
+				<input id="pw" type="password" name="pw" />
+			</div>
+			<div>
+				性别：
+				<input type="radio" name="sex" value="man" checked />男
+				<input type="radio" name="sex" value="women" />女
+				<input type="radio" name="sex" value="no" />未知
+			</div>
+			<div>
+				爱好：
+				<input type="checkbox" name="like" value="chifan" disabled/>吃饭
+				<input type="checkbox" name="like" value="shuijiao" />睡觉
+				<input type="checkbox" name="like" value="play_doudou" checked />打豆豆
+			</div>
+			<div>
+				<input type="file" name="file" id="" />
+			</div>
+			<div>
+				<label for="city">
+					城市
+				</label>
+				<select id="city" name="city" style="height: 50px;">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="sz">深圳</option>
+				</select>
+			</div>
+			<div>
+				<!--<textarea rows="20" cols="100"></textarea>-->
+				<textarea style="width:300px;height:200px"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="保存" />
+				<input type="reset" />
+				<input type="button" value="按钮"/>
+				<input type="image" src="img/1.jpg" alt="" />
+				<input type="hidden" name="hide" value="10" />
+			</div>
+		</form>
+	</body>
+</html>

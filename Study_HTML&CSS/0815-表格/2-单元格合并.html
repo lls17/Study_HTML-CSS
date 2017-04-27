@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			table{
+				border-collapse: collapse;
+			}
+			td, th{
+				padding: 5px;
+				text-align: center;
+				border: 1px solid black;
+			}
+		</style>
+		<!--
+			colspan  属性规定单元格可横跨的列数。
+			<td colspan="2"></td>
+			
+			rowspan  属性规定单元格可横跨的行数。
+			<td rowspan="2"></td>
+		-->
+	</head>
+	<body>
+		<table>
+			<thead>
+				<th>星期一</th>
+				<th>星期二</th>
+				<th>星期三</th>
+				<th>星期四</th>
+				<th>星期五</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">数学</td>
+					<td>语文</td>
+					<td>英语</td>
+					<td>自然</td>
+					<td>社会</td>
+				</tr>
+				<tr>
+					<td>美术</td>
+					<td colspan="3">体育</td>
+				</tr>
+				<tr>
+					<td rowspan="2">数学</td>
+					<td>语文</td>
+					<td>英语</td>
+					<td>自然</td>
+					<td>社会</td>
+				</tr>
+				<tr>
+					<td colspan="3">美术</td>
+					<td>体育</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

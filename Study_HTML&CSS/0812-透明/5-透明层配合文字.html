@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			
+			.box, .box .pic{
+				width: 300px;
+				position: relative;
+			}
+			.box .pic_info{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 80px;
+			}
+			.pic_info .info_bg{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				opacity: .6;
+				filter: alpha(opacity=60);
+			}
+			.pic_info .info_text{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 80px;
+				text-align: center;
+			}
+		</style>
+		<!--
+			position: absolute; 后，一定要给宽、高！
+		-->
+	</head>
+	<body>
+		<section class="box">
+			<img src="img/1.jpg" alt="" class="pic"/>
+			<div class="pic_info">
+				<div class="info_bg"></div>
+				<div class="info_text">小能和米鹿~ 一对儿羞羞羞~</div>
+			</div>
+		</section>
+	</body>
+</html>

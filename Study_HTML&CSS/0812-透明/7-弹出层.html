@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.box{
+				width: 400px;
+				height: 280px;
+				border: 1px solid black;
+				margin: 50px auto;
+				position: relative;
+			}
+			.bg{
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				width: 400px;
+				height: 280px;
+				background-color: black;
+				opacity: 0.2;
+			}
+			.text_box{
+				position: absolute;
+				width: 400px;
+				height: 280px;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>注意：bg层要写到第一个子孩子，才能沉在最下面。否则会成“前景”</h3>
+		<div class="box">
+			<div class="bg"></div>
+			<div class="text_box">
+				<a href="">标题</a>
+				<p>一段文字的介绍</p>
+				<div class="num_info">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="name_type">
+					<span>
+						节目：
+						<a href="">新白发魔女</a>
+					</span>
+					<span>
+						分类：
+						<a href="">电视剧</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

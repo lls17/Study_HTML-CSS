@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,div{
+				margin: 0;
+			}
+			.father{
+				position: relative;
+				margin: 50px auto;
+				padding: 50px;
+				width: 300px;
+				height: 300px;
+				border: 30px solid orange;
+				background-color: yellow;
+			}
+			.son{
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>绝对定位后，是基于定位父级的 border以里（不包含border）开始偏移</h4>
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</body>
+</html>

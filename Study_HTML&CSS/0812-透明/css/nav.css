@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.box{
+	width: 500px;
+	margin: 50px auto;
+}
+.box .item{
+	height: 30px;
+}
+.item li{
+	position: relative;
+	float: left;
+	margin-left: -2px;
+	height: 30px;
+	padding: 0 10px;
+	/* 1、文字在盒子内居中（水平+垂直）*/
+	line-height: 30px;
+	text-align: center;
+	border: 2px solid blueviolet;
+	border-bottom: 2px solid black;
+}
+.item li.last{
+	width: 100px;
+	height: 32px;
+	border-top: none;
+	border-right: none;
+}
+.item li a{
+	color: red;
+}
+.item li:hover{
+	border-color: black;
+	border-bottom: none;
+	/* 2、定位的兄弟间，增加自身层级*/
+	z-index: 2;
+}
