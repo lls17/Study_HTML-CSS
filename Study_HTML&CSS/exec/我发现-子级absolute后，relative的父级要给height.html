@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.box{
+				position: relative;
+				border: 2px solid black;
+			}
+			.ht200{
+				position: absolute;
+				float: left;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.ht100{
+				float: right;
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+			}
+			.ht50{
+				float: right;
+				width: 50px;
+				height: 50px;
+				background-color: yellow;
+			}
+			div{
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>注意：因绝对定位后，会从文档流中删除；故relative的父级一定要给高度height，否则占位不准确。会包不住子级（此时已不是子级）！！</h4>
+		<section class="box clearfix">
+			<div class="ht200"></div>
+			<div class="ht100"></div>
+			<div class="ht50"></div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.box{
+				background-color: blue;
+				/*padding-top: 50px;*/
+				border: 1px solid yellow;
+				_overflow: hidden;
+				_zoom: 1;
+			}
+			.item{
+				height: 30px;
+				background-color: red;
+				/* 子集margin-top、margin-bottom传递给父级*/
+				margin: 50px;
+			}
+			.item:nth-of-type(1){
+				/*margin-top: 0;
+				margin-left:50px;*/
+			}
+		</style>
+		<!--
+		解决方案:
+                    问题1、触发haslayout、BFC。
+                    问题2、尽量使用同一方向的margin，比如都设置top或者bottom；或者用padding代替.
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</body>
+</html>

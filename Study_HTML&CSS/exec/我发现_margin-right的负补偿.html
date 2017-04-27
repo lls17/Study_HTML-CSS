@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body, h4{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.container{
+				float: left;
+				background-color: orange;
+				width: 280px;
+				height: 500px;
+			}
+			.box{
+				background-color: pink;
+				margin-right: -20px;
+			}
+			.box .item{
+				float: left;
+				margin-right: 20px;
+				background-color: greenyellow;
+				line-height: 30px;
+			}
+			
+			.container_sec{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: blueviolet;
+				margin-top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>div>ul>li，给div加width:280px;，给ul不给宽度，给ul加margin-right:-20px;，给li加margin-right:20px;</h4>
+		<section class="container">
+			<ul class="box clearfix">
+				<li class="item">中国排行榜</li>
+				<li class="item">美国排行榜</li>
+				<li class="item">英国排行榜</li>
+				<li class="item">韩国排行榜</li>
+				<li class="item">北京排行榜</li>
+				<li class="item">山东排行榜</li>
+				<li class="item">青岛排行榜</li>
+				<li class="item">济南排行榜</li>
+			</ul>
+		</section>
+		<section class="container_sec" style="color:#fff;">Section2</section>
+	</body>
+</html>

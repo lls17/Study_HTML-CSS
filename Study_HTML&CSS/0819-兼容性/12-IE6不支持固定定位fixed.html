@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+				height: 3000px;
+			}
+			#goToTop{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				_position: absolute;
+				_right:0;
+				_top:expression(eval(document.documentElement.scrollTop + 100));
+			}
+		</style>
+		<!--
+			性能比原生js差
+			会闪烁体验不好
+		-->
+	</head>
+	<body>
+		<div id="goToTop"></div>
+	</body>
+</html>

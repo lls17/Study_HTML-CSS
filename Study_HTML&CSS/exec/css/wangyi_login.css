@@ -1,0 +1,234 @@
+body, h3, dl, dd{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+input{
+	padding: 0;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.must{
+	color: #d03f77;
+}
+body{
+	background-color: #f9f9f9;
+	font-size: 12px;
+}
+.box{
+	width: 960px;
+	margin: 0 auto;
+}
+.box .head{
+	height: 27px;
+	margin: 30px 0 24px;
+}
+.head .head_title{
+	float: left;
+	width: 664px;
+	height: 27px;
+	background: url(../img/login/head_logo.png) no-repeat;
+}
+.head_title a{
+	float: left;
+	width: 108px;
+	/* 注：height：0，overflow：hidden来“隐藏”内容显示，用padding撑开盒子大小*/
+	height: 0;
+	padding-top: 27px;
+	overflow: hidden;
+	margin-right: 22px;
+	/*font-size: 0;*/
+}
+.head .op_list{
+	float: right;
+	height: 27px;
+	margin-right: 5px;
+}
+.head .op_list a{
+	float: left;
+	line-height: 28px;
+	color: #003399;
+}
+.head .op_list .breakLine{
+	float: left;
+	margin: 8px 7px 0;
+	height: 12px;
+	width: 1px;
+	background-color: #a899a8;
+}
+/*.box .container{
+	width: 960px;
+}*/
+.container .cont_title{
+	height: 36px;
+	line-height: 38px;
+	padding-left: 20px;
+	border: 1px solid #5b88b8;
+	background: url(../img/login/bg_blue.png) repeat-x;
+	color: #fff;
+	font-size: 14px;
+}
+.container .main{
+	/*width: 958px;*/
+	border: 1px solid #e0e0e0;
+	border-top: none;
+}
+.main .main_left{
+	float: left;
+	width: 642px;
+	padding-top: 50px;
+	border-right: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+.main_left .item{
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.item dt{
+	float: left;
+	height: 26px;
+	width: 135px;
+	margin-right: 10px;
+	line-height: 26px;
+	text-align: right;
+	color: #555;
+}
+.item dd{
+	float: left;
+}
+.item .email_type{
+	height: 56px;
+}
+.item .email_type a{
+	float: left;
+	margin-right: -1px;
+	width: 166px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	border: 1px solid #b5b5b5;
+	background: url(../img/login/bt_gray.png);
+	color: #555;
+}
+.email_type a.active{
+	border-color: #0e529a;
+	background: url(../img/login/bg_blue.png) repeat-x;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+.input_addr{
+	width: 210px;
+	height: 25px;
+	border: 1px solid #ababab;
+}
+.sel_addr{
+	width: 100px;
+	height: 27px;
+	font-weight: bold;
+}
+.item .tips{
+	font-size: 12px;
+	/*height: 34px;*/
+	line-height: 34px;
+	color: #999;
+}
+.input_pwd, .input_repwd{
+	width: 332px;
+	height: 25px;
+	border: 1px solid #b5b5b5;
+}
+.defpwd{
+	padding-top: 10px;	
+	position: relative;
+}
+.defpwd dt{
+	line-height: 30px;
+}
+.defpwd_text .input_defpwd{
+	width: 206px;
+	height: 25px;
+	border: 1px solid #b5b5b5;
+}
+.defpwd_text .tips{
+	height: 44px;
+	line-height: 56px;
+}
+.defpwd_pic{
+	position: absolute;
+	height: 82px;
+	width: 122px;
+	left: 357px;
+	top:-2px;
+}
+.defpwd_pic .pic{
+	display: block;
+	height: 50px;
+	width: 120px;
+	border: 1px solid #e7e7e7;
+}
+.defpwd_pic .text{
+	display: block;
+	margin-left: 9px;
+	font-size: 12px;
+	color: #003399;
+	line-height: 30px;
+}
+.agree_text{
+	line-height: 18px;
+	color: #999999;
+	font-size: 12px;
+}
+.agree_text a{
+	color: #003399;
+}
+.sel_agree{
+	vertical-align: -3px;
+}
+.main .main_left .submit{
+	margin-bottom: 45px;
+}
+.submit_text{
+	display: block;
+	width: 117px;
+	height: 35px;
+	background: url(../img/login/bg_green.png);
+	border: 1px solid #388c23;
+	margin-top: 5px;
+	line-height: 35px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.main .main_right{
+	float: left;
+	background-color: #f5f5f5;
+}
+.main_right .ad_right{
+	display: block;
+	width: 228px;
+	height: 235px;
+	margin: 105px 35px 207px 52px;
+}
+.box .foot{
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	word-spacing: 3px;
+	color: #999;
+	font-size: 12px;
+}
+.foot .copy{
+	display: inline-block;
+	height: 12px;
+	line-height: 12px;
+	border-left: 1px solid #a899a8;
+	padding-left: 10px;
+}
+.foot a{
+	color: #999;
+}

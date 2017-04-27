@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+           *{margin :0; padding:0 ;}
+           .box{
+              width: 203px;
+              height: 203px;
+              background-color: red;
+              position:relative;
+           }
+           .item{
+              width: 100px;
+              height: 100px;
+              background-color: green;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+           }
+      </style>
+			<!--
+				解决方法：定位元素的定位父级宽高设成偶数
+			-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="item"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				margin: 50px auto;
+			}
+			.content{
+				background-color: pink;
+				height: 30px;
+				margin: 0 -20px;
+				/*解决方法：给负值margin的元素加position:relative*/
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="content"></div>
+		</div>
+	</body>
+</html>

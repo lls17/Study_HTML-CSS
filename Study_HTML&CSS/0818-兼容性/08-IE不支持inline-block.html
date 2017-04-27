@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			section{
+				font: 0px "宋体";
+			}
+			div{
+				font: 14px "宋体";
+				width: 150px;
+				height: 150px;
+				background-color: red;
+				border: 1px solid black;
+				display: inline-block;
+				*display: inline;
+				*zoom:1;
+			}
+		</style>
+		<!--
+			IE6不支持inline-block
+			解决办法：display:inline;
+					zoom:1;
+			css hack
+			* ie6,7
+			_ ie6
+			
+		-->
+	</head>
+	<body>
+		<section>
+			<div>div1</div>
+			<div>div2</div>
+		</section>
+	</body>
+</html>

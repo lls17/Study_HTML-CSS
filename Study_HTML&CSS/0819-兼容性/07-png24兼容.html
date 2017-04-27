@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				/*background-color: black;*/
+				/*background: black url(img/png24.png) no-repeat;*/
+			}
+		</style>
+		<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+		<script>
+//			DD_belatedPNG.fix('.div,img');
+			DD_belatedPNG.fix('body');
+		</script>
+		<!--
+			DD_belatedPNG.js不能用在body上
+		-->
+	</head>
+	<body>
+		<img src="img/gif.gif" alt="" />
+		<img src="img/jpeg.jpg"/>
+		<img src="img/png8.png"/>
+		<img src="img/png24.png"/>
+		<div class="div" style="width: 200px;height:200px;background: url(img/png24.png);"></div>
+	</body>
+</html>

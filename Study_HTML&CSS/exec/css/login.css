@@ -1,0 +1,124 @@
+body, h3{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.box{
+	margin: 30px auto;
+	width: 960px;
+	padding: 0 11px;
+	background: #f9f9f9;
+}
+.head{
+	padding-top: 30px;
+	height: 50px;
+}
+.head .title{
+	float: left;
+}
+.head .title .item{
+	float: left;
+	margin-right: 24px;
+	font-size: 0;
+}
+.title_163{
+	height: 27px;
+	width: 107px;
+	background: url(../img/login/logo_163.png) no-repeat;
+}
+.title_126{
+	height: 27px;
+	width: 107px;
+	background: url(../img/login/logo_126.png) no-repeat;
+}
+.title_yeah{
+	height: 27px;
+	width: 114px;
+	background: url(../img/login/logo_yeah.png) no-repeat;
+}
+.head .opts{
+	float: right;
+	height: 27px;
+	line-height: 27px;
+	font-size: 12px;
+}
+.main{
+	
+}
+.main .top{
+	height: 37px;
+	border: 1px solid #5c8cbd;
+	border-bottom: none;
+	border-radius: 2px 2px 0 0;
+	background: url(../img/login/bg_title.png) repeat-x;
+	color: #fff;
+	font-size: 14px;
+	line-height: 37px;
+	text-indent: 20px;
+}
+.main .login{
+	border: 1px solid #e0e0e0;
+	border-top: none;
+	height: 546px;
+}
+.login .info{
+	float: left;
+	width: 642px;
+	border-right: 1px solid #e0e0e0;
+}
+.info .item{
+	padding-top: 12px;
+	height: 60px;
+}
+.info .item .left{
+	float: left;
+	width: 136px;
+	height: 100%;
+	margin-right: 10px;
+	text-align: right;
+}
+.left label:before{
+	content: "*";
+	color: red;
+	margin-right: 4px;
+}
+.info .item .right{
+	float: left;
+	height: 100%;
+}
+.info .item_tab{
+	padding-top: 50px;
+	height: 56px;
+}
+.item_tab .right a{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	padding: 0 38px;
+	border: 1px solid #b5b5b5;
+	color: #555555;
+	margin-right: -1px;
+}
+.item_tab .right a.cur, .item_tab .right a:hover{
+	font-weight: bold;
+	color: #fff;
+	border-color: #0e529a;
+	background: url(../img/login/bg_tab.png) repeat-x ;
+}
+.item_tab .right a:first-child{
+	border-radius: 2px 0 0 2px;
+}
+.item_tab .right a:last-child{
+	border-radius: 0 2px 2px 0;
+}
+.login .try{
+	float: right;
+}

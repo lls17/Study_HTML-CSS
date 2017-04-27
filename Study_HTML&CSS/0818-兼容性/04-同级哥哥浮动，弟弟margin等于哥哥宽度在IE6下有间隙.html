@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			div{
+				height: 100px;
+				width: 100px;
+			}
+			.box1{
+				float: left;
+				background-color: yellow;
+			}
+			.box2{
+				/*margin-left: 100px;*/
+				float: left;
+				background-color: orange;	
+			}
+		</style>
+		<!--
+			第一块元素浮动，第二块元素加margin值等于第一块元素在IE6下会有间隙问题
+			解决方案：不建议这么写，用浮动解决
+		-->
+	</head>
+	<body>
+		<div class="box1">我是哥哥</div>
+		<div class="box2">我是弟弟</div>
+	</body>
+</html>

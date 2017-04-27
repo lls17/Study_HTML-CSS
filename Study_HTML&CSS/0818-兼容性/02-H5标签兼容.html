@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 方案一： 引插件-->
+		<!--<script src="js/html5shiv.js" type="text/javascript" charset="utf-8"></script>-->
+		
+		<!--方案二： 自定义标签
+			<script type="text/javascript">
+				document.createElement("header");
+				document.createElement("section");
+				document.createElement("footer");
+				document.createElement("lls");
+			</script>
+		-->
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			header, section, div, footer, lls{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+				border: 1px solid red;
+			}
+			/* 配合document.createElement("XX")使用*/
+			/*header, section, footer, lls{
+			 	* 创建出的是内联元素
+				display: block;
+			}*/
+		</style>
+		<!--
+			H5标签不支持非标准浏览器
+			
+			解决方案一：引用html5shiv.js帮助解决。注意用法：先引入<script src="js/html5shiv.js"></script>
+			
+			解决方案二：自定义标签
+			<script>
+				document.createElement('section');
+				document.createElement('header');
+				document.createElement('footer');
+				document.createElement('nav');
+				document.createElement('dsads');
+				document.createElement('xiaotao');
+			</script>
+			使用了一个H5标签，就要写一个document.createElement('H5标签名');
+		-->
+	</head>
+	<body>
+		<header>Header</header>
+		<section>Section</section>
+		<div>Div</div>
+		<footer>Footer</footer>
+		<lls>我是美丽莎~</lls>
+	</body>
+</html>

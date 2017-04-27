@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				border: 10px solid red;
+			}
+			.content{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+			
+			/* 清浮动终极写法*/
+			.clearfix{
+				_zoom:1;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="content"></div>
+		</div>
+	</body>
+</html>

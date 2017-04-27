@@ -1,0 +1,414 @@
+
+l元素浮动之后,能设置宽度的话就给元素加宽度.如果需要宽度是内容撑开,就给它里边的块元素加上浮动；
+解决方案：给需要宽度由内容撑开的元素加上浮动
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .box{width :400px ;border: 1px solid black;overflow: hidden;}
+           .left{float :left; background: red;}
+          .right{float :right; background: blue;}
+           h2{margin :0; height:30 px;float : left ;}
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "left">
+             < h2>左边</h2>
+          </ div>
+          < div class= "right" >
+             < h2>右边</h2>
+          </ div>
+      </ div>
+   </ body>
+</ html>
+
+l第一块元素浮动,第二块元素加margin值等于第一块元素,在IE6下会有间隙问题;
+解决方案：不建议这么写，用浮动解决
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .box{width :500px ;}
+          .left{width :200px ;height: 200px; float:left ;background: red}
+          .right{width :200px ;height: 200px; background: blue; margin-left: 200px; }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "left"></div >
+          < div class= "right" ></div>
+      </ div>
+   </ body>
+</ html>
+
+lIE6下子元素超出父级宽高，会把父级的宽高撑开
+解决方案：子元素高度不要超过父级高度
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .box{
+              width: 200px;
+              height: 200px;
+              border: 1px solid red;
+           }
+           .item{
+              width: 100px;
+              height: 460px;
+              background-color: blue;
+           }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "item"></div >
+      </ div>
+   </ body>
+</ html>
+
+lp标签包含块元素嵌套规则。
+解决方案：p标签不要嵌套块元素
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+   </ head>
+   < body>
+      < p>
+          < div>div</div >
+      </ p>
+   </ body>
+</ html>
+
+lmargin兼容性问题
+1、父子级包含的时候子级的margin-top会传递给父级
+2、同级元素上下外边距会叠压；
+
+解决方案:
+                    问题1、触发haslayout、BFC。
+                    问题2、尽量使用同一方向的margin，比如都设置top或者bottom；或者用padding代替.
+
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .box{
+              background-color: green;
+           }
+           .head{
+              height: 30px;
+              background-color: red;
+              margin: 50px;
+           }
+           .content{
+              height: 30px;
+              background-color: blue;
+              margin: 50px;
+           }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "head">head</div >
+          < div class ="content">content</div >
+      </ div>
+   </ body>
+</ html>
+
+ldisplay:inline-block
+解决方案：针对ie6、7使用hack添加display:inline和zoom:1
+<! DOCTYPE html>
+< html lang= "en">
+< head>
+   < meta charset= "UTF-8" >
+   < title>inline-block</title>
+   < style type= "text/css" >
+       div{
+           width: 100px;
+           height: 100px;
+           display:inline-block ;
+           border:1 px solid red;
+           font-size: 12px;
+          *display: inline;
+           *zoom: 1;
+       }
+       span{
+           width: 100px;
+           height: 100px;
+           display:inline-block ;
+           border:1 px solid red;
+           font-size: 24px;
+          *display: inline;
+           *zoom: 1;
+          *margin-right: -4px ;
+       }
+       section{
+           font-size:0 ;
+       }
+    </style>
+</ head>
+< body>
+   < p>块元素转内联块</p>
+   < hr>
+   < section>
+      < div>块1</div>
+      < div>块2</div>
+      < div>块3</div>
+   </ section>
+   
+   < p>内联元素转内联块</ p>
+   < hr>
+   < section>
+      < span href= "">内联1</span>
+      < span href= "">内联2</span>
+      < span href= "">内联3</span>
+   </ section>
+   
+</ body>
+</ html>
+
+lIE6 最小高度问题
+解决方案：针对ie6、7使用hack添加overflow:hidden
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .box{
+              height: 1px;
+              background-color: red;
+              overflow: hidden;
+           }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box"></div >
+   </ body>
+</ html>
+
+lIE6 双边距
+解决方案:针对ie6、7使用hack添加display:inline
+<! doctype html>
+< html lang= "en">
+< head>
+   < meta charset= "UTF-8" />
+   < title></title >
+   < style>
+       body{margin :0}
+       .box{
+           width: 200px;
+           height: 200px;
+           margin: 100px;
+           background-color: red;
+           float: left;
+           *display: inline;
+       }
+   </ style>
+</ head>
+< body>
+   < div class= "box"></div >
+</ body>
+</ html>
+
+lli里元素都浮动 li 在IE6 7  下方会产生4px间隙问题
+解决方案：针对ie6、7使用hack添加vertical-align
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           .list{
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              width: 300px;
+           }
+           .list li {
+              height: 30px;
+              border: 1px solid red;
+              line-height: 30px;
+              *vertical-align: top;
+           }
+           .list li a{
+              float: left;
+           }
+           .list li span{
+              float: right;
+           }
+      </ style>
+   </ head>
+   < body>
+      < ul class= "list">
+          < li>
+             < a href= "">左侧</a>
+             < span>右侧</span>
+          </ li>
+          < li>
+             < a href= "">左侧</a>
+             < span>右侧</span>
+          </ li>
+      </ ul>
+   </ body>
+</ html>
+
+l浮动元素之间注释，导致多复制一个文字问题
+解决方案：两个浮动元素中间有注释或者内嵌元素并且和父级宽度相差不超过3像素，文字就被复制。所以避免注释和内联元素的出现。
+<! doctype html>
+< html>
+< head>
+< meta charset= "utf-8" >
+< title>无标题文档</title>
+< style>
+.wrap {width: 400px; }
+.left {float: left;}
+.right {float: right;width :400px ;}
+</ style>
+</ head>
+< body>
+< div class= "wrap">
+   < div class= "left"></div >
+    < span></span ><span></ span><!-- IE下文字溢出BUG -->
+    < div class= "right" >&darr;这是多出来的一只猪</ div>
+</ div>
+</ body>
+</ html>
+
+lIE6 7 父级元素的overflow:hidden 是包不住子级的relative
+解决方案：针对ie6、7使用hack给父级定位元素添加position:relative
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           *{
+              margin: 0;
+              padding: 0;
+           }
+           .box{
+              width: 200px;
+              height: 200px;
+              background-color: red;
+              border:4 px solid black;
+              overflow: hidden;
+              * position: relative;
+           }
+           .item{
+              width: 300px;
+              height: 300px;
+              background-color: blue;
+              position: relative;
+           }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "item"></div >
+      </ div>
+   </ body>
+</ html>
+
+lIE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差
+解决方案：避免父级宽高出现奇数
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           *{margin :0; padding:0 ;}
+           .box{
+              width: 308px;
+              height: 408px;
+              background-color: red;
+              position:absolute ;
+           }
+           .item{
+              width: 100px;
+              height: 100px;
+              background-color: green;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+           }
+      </ style>
+   </ head>
+   < body>
+      < div class= "box">
+          < div class= "item"></div >
+      </ div>
+   </ body>
+</ html>
+
+lIE6下绝对定位元素和浮动元素并列绝对定位元素消失
+解决方案：浮动元素和绝对定位元素是同级的话，定位元素会消失。所以只要不是同级就可以避免这个问题。
+<! doctype html>
+< html>
+< head>
+< meta charset= "utf-8" >
+< title>无标题文档</title>
+< style>
+.box {width: 200px; height:200 px; border :1px solid #000; position :relative; }
+.box div{ width:150 px;height :150px ; background :Red;margin-left :50px ; float :left; display:inline ;}
+.box span{ width :50px ;height: 50px; background:yellow; position :absolute; top:-10 px;right :-20px ;}
+</ style>
+</ head>
+< body>
+< div class= "box">
+   < div></div >
+   < p><span ></span></ p>
+</ div>
+</ body>
+</ html>
+
+lIE6 下input的空隙 和 border问题
+解决方案：给input浮动清除空隙；
+<! doctype html>
+< html>
+< head>
+< meta charset= "utf-8" >
+< title>无标题文档</title>
+< style>
+.box {width: 200px; border:1 px solid #000 ; background: Red;}
+.box input {border: none;margin :0; padding:0 ;width: 200px; height:30 px; background :#fff; float:left }
+</ style>
+</ head>
+< body>
+< div class= "box">
+   < input type= "text" />
+</ div>
+</ body>
+</ html>
+
+lIE6下输入类型表单控件背景问题
+解决方案：设置background-attachment:fixed
+<! DOCTYPE html>
+< html>
+   < head>
+      < meta charset= "utf-8" >
+      < title></title >
+      < style>
+           input{
+              width: 200px;
+              height: 30px;
+              background: url(mail.jpg) no-repeat ;
+              background-attachment : fixed ;
+           }
+       </style>
+   </ head>
+   < body>
+      < input type= "text" />
+   </ body>
+</ html>

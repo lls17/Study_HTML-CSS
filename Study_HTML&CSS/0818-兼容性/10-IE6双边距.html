@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.box{
+				float: left;
+				background: black;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				float: left;
+				margin-right: 50px;
+				*display: inline;
+			}
+		</style>
+		<!--
+			浮动元素有margin时会触发双倍边距
+			margin为left时，为左边第一个元素
+			margin为right时，为右边第一个元素
+			
+			解决方案:针对ie6、7使用hack添加display:inline
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

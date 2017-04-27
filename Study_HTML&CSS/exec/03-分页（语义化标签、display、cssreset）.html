@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分页</title>
+		<style>
+			.nav{
+				margin: 30px auto;
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+				font-size: 20px;
+				border: 1px solid blue;
+			}
+			.page{
+				display: inline-block;
+				/*padding: 6px 16px;*/
+				height: 30px;
+				line-height: 30px;
+				padding: 0 10px;
+				/*注：display:inline-block;对上下margin无效*/
+				margin: 0 6px;  
+			}
+			.page:hover, .cur{
+				color: white;
+				background-color: cornflowerblue;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="nav">
+			<a href="javascript:;" class="page prev">上一页</a>
+			<a href="javascript:;" class="page">1</a>
+			<a href="javascript:;" class="page">2</a>
+			<a href="javascript:;" class="page cur">3</a>
+			<a href="javascript:;" class="page">4</a>
+			<a href="javascript:;" class="page">5</a>
+			<a href="javascript:;" class="page">6</a>
+			<a href="javascript:;" class="page next">下一页</a>
+		</nav>
+	</body>
+</html>

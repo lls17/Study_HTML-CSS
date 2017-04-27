@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 200px;
+				height: 200px;
+				border: 10px solid black;
+			}
+			.item{
+				width: 500px;
+				height: 300px;
+				background-color: red;
+			}
+		</style>
+		<!--
+			IE6下子元素超出父级宽高，会把父级的宽高撑开
+			解决方案：子元素高度不要超过父级高度
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="item"></div>
+		</div>
+	</body>
+</html>
