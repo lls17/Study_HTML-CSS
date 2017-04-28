@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-color: black;
+			}
+			div{
+				border: 1px solid black;
+				width: 560px;
+				margin: 50px auto;
+				font:bold 68px "楷体";
+				/*background-color: black;*/
+	/* ！！注：文字颜色不能是纯色，要有透明，才能透出背景图*/
+				color: rgba(255,255,255,0.3);
+				background-image: linear-gradient(135deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 65%);
+				background-repeat: no-repeat;
+				background-position: -560px 0;
+				transition: 3s;
+				-webkit-background-clip: text;
+				
+			}
+			div:hover{
+				background-position: 560px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			我爱北京天安门！
+		</div>
+	</body>
+</html>

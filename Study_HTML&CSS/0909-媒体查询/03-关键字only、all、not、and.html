@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 400px;
+				height: 400px;
+				background-color: pink;
+			}
+			/*@media all and (min-width:400px){
+				div{
+					width: 600px;
+					height: 600px;
+					background-color: plum;
+				}
+			}*/
+			/*@media not tv{
+				div{
+					width: 600px;
+					height: 600px;
+					background-color: plum;
+				}
+			}*/
+			/*@media only all and (min-width: 600px) and (max-width: 800px) {
+				div{
+					width: 600px;
+					height: 600px;
+					background-color: plum;
+				}
+			}*/
+			@media only all and (min-width:821px) and (max-width:1023px){
+				div{
+					width: 600px;
+					height: 600px;
+					background-color: plum;
+				}
+			}
+		</style>
+		<!--
+			and			和、与 （连接媒体特性）
+
+			not			排除指定媒体类型
+			
+			only		指定某种特定的媒体类型
+				很多时候是用来对那些不支持媒体特性但却支持媒体类型的设备
+		-->
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

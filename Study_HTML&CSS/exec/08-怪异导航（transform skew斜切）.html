@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			nav{
+				height: 30px;
+			}
+			a{
+				float: left;
+				text-decoration: none;
+				line-height: 30px;
+				padding: 0 20px;
+				border: 1px solid deepskyblue;
+				color: black;
+				margin-right: -1px;
+				transform: skewX(-30deg);
+				transform-origin: center;
+			}
+			a:hover{
+				background-color: deepskyblue;
+				color: #fff;
+			}
+			span{
+				display: inline-block;
+				transform: skewX(30deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p>
+			注1：斜切会将其内部的一切内容均斜切，故想要里面的内容显示为“正”竖直，则需要将内容的盒子反斜切补偿父的正斜切。
+		</p>
+		<p>
+			注2：transform对inline元素不起作用。
+		</p>
+		<hr />
+		<nav>
+			<a href="javascripg:;">
+				<span>瑞士</span>
+			</a>
+			<a href="javascripg:;">
+				<span>新马泰</span>
+			</a>
+			<a href="javascripg:;">
+				<span>岛</span>
+			</a>
+		</nav>
+	</body>
+</html>

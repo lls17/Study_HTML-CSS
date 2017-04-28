@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+		</script>
+		<style>
+			body{
+				margin: 0;
+			}
+			section{
+				overflow: hidden;
+			}
+			div{
+				font-size: 20px;
+				width: 15em;
+				height: 15em;
+				margin: 0.5em;
+				background-color: pink;
+				float: left;
+			}
+		</style>
+		<!--
+			em 是相对单位。依赖性太高，并且不能解决屏幕变化改变布局的问题。so...
+		-->
+	</head>
+	<body>
+		<section>
+			<div>48px</div>
+			<div>36px</div>
+			<div>26px</div>
+			<div>20px</div>
+			<div>18px</div>
+			<div>14px</div>
+		</section>
+	</body>
+</html>

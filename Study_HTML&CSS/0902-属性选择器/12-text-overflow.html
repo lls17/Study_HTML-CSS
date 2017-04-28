@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			Text-overflow 定义省略文本的处理方式
+				clip  无省略号
+				Ellipsis 省略号 
+		!!注意配合overflow:hidden和white-space:nowrap一块使用 
+		-->
+		<style>
+			div{
+				width: 280px;
+				border: 1px solid red;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: Ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			我是一段很长很长很长很长很长很长很长的文字...
+		</div>
+	</body>
+</html>

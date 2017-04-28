@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width: 800px;
+				height: 600px;
+				border: 10px solid red;
+				display: flex;
+				/*flex-direction:row;*/
+				flex-direction: column;
+			}
+			div{
+				/*display: inline-block;*/
+				/*float: left;*/
+				width: 80px;
+				height: 80px;
+				border: 1px solid black;
+			}
+		</style>
+		
+		<!--
+			display:flex 弹性（一行内均分宽度或一列内均分高度显示）
+			flex-direction 设置主轴方向
+			
+			row  从左向右排列(默认值)
+			row-reverse 从右向左排列
+			column 从上往下排列
+			column-reverse 从下往上排列
+		-->
+	</head>
+	<body>
+		<section class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</section>
+	</body>
+</html>

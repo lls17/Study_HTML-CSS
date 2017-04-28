@@ -1,0 +1,7 @@
+@media only all and (min-width:821px) and (max-width:1023px){
+	body div{
+		width: 600px;
+		height: 600px;
+		background-color: plum;
+	}
+}

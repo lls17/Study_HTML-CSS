@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width: 300px;
+				height: 600px;
+				border: 1px solid red;
+				background: url(img/1.jpg) no-repeat;
+				/*background-size:300px 300px;*/
+				/*background-size:100%;*/
+				background-size:contain;
+			}
+			/*img{
+				width: 400px;
+				height: 200px;
+			}*/
+		</style>
+		<!--
+			background-size:x y
+			background-size:100% 100%
+			cover 放大	一定铺满整个容器，但是图片不一定显示完整
+			contain 缩小  不一定会铺满整个容器，但会保证图片比例正常并显示完整
+		-->
+	</head>
+	<body>
+		<div class="box"></div>
+		<!--<img src="img/1.jpg" alt="" />-->
+	</body>
+</html>

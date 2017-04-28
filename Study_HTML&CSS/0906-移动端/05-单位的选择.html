@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+		</script>
+		<style>
+			body{
+				margin: 0;
+			}
+			section{
+				overflow: hidden;
+			}
+			div{
+				width: 300px;
+				height: 300px;
+				margin: 10px;
+				background-color: pink;
+				float: left;
+			}
+		</style>
+		<!--
+			px 是一个绝对值，在屏幕宽度发生变化时，不能有响应，永远都是固定的值。会影响布局展示效果。
+		-->
+	</head>
+	<body>
+		<section>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+	</body>
+</html>

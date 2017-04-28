@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			min-width		分辨率宽度大于等于设置值的时候识别
+			max-width		分辨率宽度小于等于设置值的时候识别
+			orientation:portrait 				竖屏
+			orientation:landscape				横屏
+		-->
+		<style>
+			div{
+				width: 400px;
+				height: 400px;
+				background-color: pink;
+			}
+			/*@media (min-width:600px){
+				div{
+					width: 400px;
+					height: 400px;
+					background-color: plum;
+				}
+			}*/
+			/*@media (max-width:600px){
+				div{
+					width: 400px;
+					height: 400px;
+					background-color: plum;
+				}
+			}*/
+			@media (-webkit-min-device-pixel-ratio:2){
+				div{
+					width: 400px;
+					height: 400px;
+					background-color: plum;
+					/*background: url(img/bg-x2.jpg);*/
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

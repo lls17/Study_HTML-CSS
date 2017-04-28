@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.box{
+				width: 1000px;
+				height: 200px;
+				border: 10px solid pink;
+				margin: 50px auto;
+				/*overflow: hidden;*/
+				cursor: pointer;
+			}
+			.box:hover ul{
+				animation-play-state: paused;
+			}
+			ul{
+				height: 200px;
+				width: 200%;
+				animation: scroll 8s linear infinite;
+			}
+			li{
+				float: left;
+			}
+			@keyframes scroll{
+				0%{
+					transform: translateX(0px);
+				}
+				100%{
+					transform: translateX(-1000px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><img src="img/1.jpg" alt="" /></li>
+				<li><img src="img/2.jpg" alt="" /></li>
+				<li><img src="img/3.jpg" alt="" /></li>
+				<li><img src="img/4.jpg" alt="" /></li>
+				<li><img src="img/5.jpg" alt="" /></li>
+				<li><img src="img/1.jpg" alt="" /></li>
+				<li><img src="img/2.jpg" alt="" /></li>
+				<li><img src="img/3.jpg" alt="" /></li>
+				<li><img src="img/4.jpg" alt="" /></li>
+				<li><img src="img/5.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+</html>

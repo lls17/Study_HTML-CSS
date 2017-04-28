@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			align-self 侧轴对齐
+			flex-start (默认) 元素在开始位置 富裕空间占据另一侧
+			flex-end 富裕空间在开始位置 元素占据另一侧
+			center 元素居中 富裕空间 平分左右两侧
+
+		-->
+		<style>
+			.box{
+				width: 800px;
+				height: 600px;
+				border: 10px solid red;
+				display: flex;
+				justify-content:space-around;
+				align-items:flex-start;
+				align-content:space-around;
+				flex-flow:row wrap;
+			}
+			div{
+				width: 80px;
+				height: 80px;
+				border: 1px solid black;
+			}
+			div:nth-of-type(1){
+				align-self: flex-start;
+			}
+			div:nth-of-type(2){
+				align-self: flex-end;
+			}
+			div:nth-of-type(3){
+				align-self: center;
+			}
+			div:nth-of-type(4){
+				align-self: flex-end;
+			}
+			div:nth-of-type(5){
+				align-self: flex-start;
+			}
+			div:nth-of-type(6){
+				align-self: flex-end;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</section>
+	</body>
+</html>

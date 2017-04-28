@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				position: relative;
+				height: 600px;
+				width: 600px;
+				margin: 30px auto;
+				border: 4px solid pink;
+				transition: 3s;
+				/*给父级创建3d空间 & 景深*/
+				transform-style: preserve-3d;
+				perspective: 400px;
+			}
+			.box div{
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				left: 200px;
+				top: 200px;
+				font: 60px/200px "微软雅黑";
+				text-align: center;
+			}
+			.box6{
+				background-color: rgba(255,0,0,0.5);
+			}
+			.box1{
+				transform: translateZ(-200px);
+				background-color: palegoldenrod;
+			}
+			.box2{
+				background: palegreen;
+				transform: rotateY(90deg);
+				transform-origin: left center;
+			}
+			.box5{
+				background: papayawhip;
+				transform: rotateY(-90deg);
+				transform-origin: right center;
+			}
+			.box3{
+				background: paleturquoise;
+				transform: rotateX(-90deg);
+				transform-origin: top center;
+			}
+			.box4{
+				background: palevioletred;
+				transform: rotateX(90deg);
+				transform-origin: bottom center;
+			}
+			.box:hover{
+				transform: rotateX(270deg) rotateY(360deg) rotateZ(320deg);
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			思路：1）将1-6均定位到盒子的正中心；2）以“6”这个面为正视面，将1-6分别rotate到相应的位置
+		</p>
+		<p>
+			关键点1：以“6”这个面为正视面，给父级创建3d空间及景深；
+		</p>
+		<p>
+			关键点2：因“1”是“6”的对立面，故无需rotate旋转，只需位移translate；
+		</p>
+		<p>
+			关键点3：“近大远小”原则！
+		</p>
+		<hr />
+		<div class="box">
+			<div class="box1">1</div>
+			<div class="box2">2</div>
+			<div class="box3">3</div>
+			<div class="box4">4</div>
+			<div class="box5">5</div>
+			<div class="box6">6</div>
+		</div>
+	</body>
+</html>

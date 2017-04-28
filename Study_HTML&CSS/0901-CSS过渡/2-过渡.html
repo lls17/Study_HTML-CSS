@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				/*float: left;*/
+				transition: 6s all cubic-bezier(.43,.47,.23,-1.27);
+				border: 0px solid red;
+			}
+			div:hover{
+				width: 666px;
+				/*height: 666px;*/
+				/*float: right;*/
+				background-color: red;
+				/*border: 10px solid red;*/
+			}
+		</style>
+		<!--
+			transition 过渡
+			transition-property  要运动的样式  （all || [attr] || none）
+				注意：只能过渡样式值为数值的样式（浏览器好计算）。如width、height可以，但如float属性值不是数字，故不能transition
+			transition-duration 运动时间  s||ms
+				注意：1000ms = 1s
+			transition-delay 延迟时间
+				注意：有多个时间值时，第一个时间为过渡时间，第二个时间为延迟时间
+			transition-timing-function 运动形式 
+				ease：（逐渐变慢）默认值
+				linear：（匀速）
+				ease-in：(加速)
+				ease-out：（减速）
+				ease-in-out：（先加速后减速）
+				cubic-bezier 贝塞尔曲线（ x1, y1, x2, y2 ） http://cubic-bezier.com/
+
+				
+		-->
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 500px;
+				height: 500px;
+				border: 1px solid black;
+				/*background-image: linear-gradient(0deg, #fff 0%, red 100%);*/
+				background-image: linear-gradient(0deg, yellow 0%, orange 60%, red 100%);
+			}
+		</style>
+		<!--
+			线性渐变格式
+			linear-gradient([<起点> || <角度>,]? <点>, <点>…)
+	！！只能用在背景上
+	！！0deg时，指向12点方向(从下向上)；度数加大时，顺时针方向旋转
+			IE filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ff0000',GradientType='1');
+			参数
+				起点：从什么方向开始渐变		默认：top
+				left、top、left top
+				角度：从什么角度开始渐变
+				xxx deg的形式
+				点：渐变点的颜色和位置
+				black 50%，位置可选
+		-->
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

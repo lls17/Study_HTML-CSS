@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		//1、设置viewport
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+',user-scalable=no" />');
+		
+		//2、设置html的font-size，即rem的基础单位
+			var fsize = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName("html")[0].style.fontSize = fsize + "px";
+		</script>
+		
+		<!--3、移动端需重置的默认样式-->
+		<style>
+			input {
+				-webkit-appearance:none;  /*去除input默认样式(iOS下圆角边框)*/
+			}
+			a{
+				-webkit-tap-highlight-color:transparent; /*选中时候的高亮背景*/
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>

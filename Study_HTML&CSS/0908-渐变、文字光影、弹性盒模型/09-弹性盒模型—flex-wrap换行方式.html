@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			flex-wrap 换行
+			nowrap (默认)
+			wrap 换行
+			wrap-reverse 反向换行
+		-->
+		<style>
+			.box{
+				width: 800px;
+				height: 600px;
+				border: 10px solid red;
+				display: flex;        /*弹性盒模型*/
+				flex-direction:row;    /*设置主轴方向row/column方向弹性*/   
+				justify-content:space-around;  /*主轴对齐方式*/
+				align-items:flex-start;         /*次轴对齐方式*/
+				flex-wrap: wrap-reverse;		/*换行方式*/
+			}
+			div{
+				width: 80px;
+				height: 80px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+	</body>
+</html>

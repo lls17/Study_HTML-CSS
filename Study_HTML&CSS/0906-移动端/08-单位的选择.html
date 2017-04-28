@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+			
+			console.log(document.documentElement.clientWidth);
+			// 10为设置的基数比例
+			var fz = document.documentElement.clientWidth / 10;
+			
+			// 设置html的font-size，即rem的基础单位
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+			
+		</script>
+		<style>
+			body{
+				margin: 0;
+			}
+			section{
+				overflow: hidden;
+			}
+			div{
+				width: 4.6875rem;
+				height: 4.6875rem;
+				margin: 0.15625rem;
+				background-color: pink;
+				float: left;
+				font-size: 0.59375rem;
+			}
+		</style>
+		<!--
+			rem 是相对单位。耦合度低。
+		-->
+	</head>
+	<body>
+		<section>
+			<div>48px</div>
+			<div>36px</div>
+			<div>26px</div>
+			<div>20px</div>
+			<div>18px</div>
+			<div>14px</div>
+		</section>
+	</body>
+</html>

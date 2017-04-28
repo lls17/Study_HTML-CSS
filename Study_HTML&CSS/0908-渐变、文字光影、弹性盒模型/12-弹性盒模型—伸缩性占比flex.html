@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			flex 伸缩性
+			flex: auto
+			flex: none
+		-->
+		<style>
+			.box{
+				width: 800px;
+				height: 600px;
+				border: 10px solid red;
+				display: flex;
+				justify-content:space-around;
+				align-items:flex-start;
+				align-content:space-around;
+				flex-flow:row wrap;
+			}
+			div{
+				width: 80px;
+				height: 80px;
+				border: 1px solid black;
+			}
+			div:nth-of-type(1){
+				flex: 1;
+				order: 5;
+			}
+			div:nth-of-type(2){
+				flex: 3;
+				order: 5;
+			}
+			div:nth-of-type(3){
+				flex: 5;
+				order: 5;
+			}
+			div:nth-of-type(4){
+				flex: 7;
+				order: 5;
+			}
+			div:nth-of-type(5){
+				flex: 9;
+				order: 5;
+			}
+			div:nth-of-type(6){
+				flex: 11;
+				order: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</section>
+	</body>
+</html>

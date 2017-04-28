@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body{
+				/*perspective:200px;*/
+				/*perspective-origin: center center;*/
+			}
+			.box{
+				width: 600px;
+				height: 600px;
+				border: 10px solid paleturquoise;
+				margin: 100px auto;
+			}
+			ul{
+				transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+				transition: 3s;
+				transform-style: preserve-3d;
+				position: relative;
+				transform-origin: center center -100px;
+			}
+			.box:hover ul{
+				transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+			}
+			li{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				margin: auto;
+				font: 48px/200px "微软雅黑";
+				text-align: center;
+				color: #fff;
+				position: absolute;
+			}
+			li:nth-of-type(1){
+				left: 200px;
+				top: 0;
+				background-color: palegoldenrod;
+				transform-origin:left bottom;
+				transform: rotateX(90deg);
+			}
+			li:nth-of-type(2){
+				left: 0px;
+				top: 200px;
+				background-color: palegreen;
+				transform-origin:right;
+				transform: rotateY(-90deg);
+			}
+			li:nth-of-type(3){
+				left: 200px;
+				top: 200px;
+				background-color: paleturquoise;
+				transform: translateZ(-200px);
+			}
+			li:nth-of-type(4){
+				right: 0px;
+				top: 200px;
+				background-color: palevioletred;
+				transform-origin:left;
+				transform: rotateY(90deg);
+			}
+			li:nth-of-type(5){
+				right: 200px;
+				top: 400px;
+				background-color: papayawhip;
+				transform-origin:top;
+				transform: rotateX(-90deg);
+			}
+			li:nth-of-type(6){
+				left: 200px;
+				top: 200px;
+				background-color: plum;
+			}
+			
+		</style>
+		<!--
+			无解！！！
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		</div>
+	</body>
+</html>

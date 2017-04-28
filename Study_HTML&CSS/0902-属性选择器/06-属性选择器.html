@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			h3,p{
+				margin: 0;
+			}
+			h3,div,p{
+				height: 50px;
+				margin-bottom: 10px;
+				background-color: pink;
+			}
+			[data-id*="4"]{
+				background-color: red;
+			}
+		</style>
+		<!--
+			E[attr*="value"]指定了属性名，并且有属性值，而且属值中包含了value
+		-->
+	</head>
+	<body>
+		<h3 data-title="title" data-id="123">h3</h3>
+		<div data-user="duoduo" data-id="234">div</div>
+		<p data-info="info" data-id="345">p</p>
+		<div data-date="20160902" data-id="136">div</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/* 注：自定义属性，以data-xxx开头，以区分固有属性 */
+			h3,p{
+				margin: 0;
+			}
+			h3,div,p{
+				height: 50px;
+				margin-bottom: 10px;
+				background-color: pink;
+			}
+			/*div[data-id]{
+				background-color: red;
+			}*/
+			/**[data-id]{
+				background-color: red;
+			}
+			[data-id]{
+				background-color: red;
+			}*/
+			[data-user]{
+				background-color: red;
+			}
+		</style>
+		<!--
+			E[attr]只使用属性名，但没有确定任何属性值
+		-->
+	</head>
+	<body>
+		<h3 data-title="title" data-id="1">h3</h3>
+		<div data-user="duoduo" data-id="1">div</div>
+		<p data-info="info title" data-id="1">p</p>
+		<div data-date="20160902" data-id="1">div</div>
+	</body>
+</html>

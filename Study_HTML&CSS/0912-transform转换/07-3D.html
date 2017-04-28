@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				/*perspective: 300px;*/
+			}
+			.box{
+				width: 600px;
+				height: 600px;
+				border: 10px solid paleturquoise;
+				margin: 100px auto;
+				display: flex;
+				transform-style: preserve-3d;
+				perspective: 100px;
+			}
+			.content{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				margin: auto;
+				font: 48px/200px "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 3s;
+				transform: rotateX(0deg);
+			}
+			.box:hover .content{
+				transform: rotateX(210deg);
+			}
+		</style>
+		<!--
+			1、给父级创建3D空间
+			2、给父级添加景深
+			
+			perspective 景深
+			perspective-origin 景深基点
+			transform-style（preserve-3d） 建立3D空间
+			transform 新增函数
+			rotateX()
+			rotateY()
+			rotateZ()
+			translateZ()
+			scaleZ()
+		-->
+	</head>
+	<body>
+		<div class="box">
+			<div class="content">
+				上
+			</div>
+		</div>
+	</body>
+</html>

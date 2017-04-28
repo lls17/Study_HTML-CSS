@@ -1,0 +1,13 @@
+@import url("media.css");
+div{
+	width: 400px;
+	height: 400px;
+	background-color: pink;
+}
+/*@media only all and (min-width:821px) and (max-width:1023px){
+	div{
+		width: 600px;
+		height: 600px;
+		background-color: plum;
+	}
+}*/

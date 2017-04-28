@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				margin: 100px auto;
+				transition: 3s;
+				font: 100px/200px "微软雅黑";
+				color: #fff;
+				text-align: center;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var oBox = document.getElementById("box");
+				oBox.onclick = function() {
+					var a = 1;
+					var b = 0;
+					var c = 0;
+					var d = 1;
+					var e = 0;
+					var f = 0;
+					//-----------------------------
+					var deg = 180;
+					
+					a=Math.cos(deg/180*Math.PI); 
+					b=Math.sin(deg/180*Math.PI);
+					c=-Math.sin(deg/180*Math.PI);
+					d=Math.cos(deg/180*Math.PI);
+					//-----------------------------
+					
+					oBox.style.transform = "matrix(" + a + "," + b + "," + c + "," + d + "," + e + "," + f + ")";
+					oBox.style.filter = "progid:DXImageTransform.Microsoft.Matrix( M11= " + a + ", M12= " + c + ", M21= " + b + " , M22=" + d + ",SizingMethod='auto expand')";
+				};
+			};
+		</script>
+		<!--
+			matrix(a,b,c,d,e,f) 矩阵函数
+			通过矩阵实现缩放
+			x轴缩放 a=x*a    c=x*c     e=x*e;
+			y轴缩放 b=y*b   d=y*d     f=y*f;
+			通过矩阵实现位移
+			x轴位移: e=e+x
+			y轴位移: f=f+y
+			通过矩阵实现倾斜
+			x轴倾斜: c=Math.tan(xDeg/180*Math.PI)
+			y轴倾斜: b=Math.tan(yDeg/180*Math.PI)
+			通过矩阵实现旋转
+			a=Math.cos(deg/180*Math.PI); 
+			b=Math.sin(deg/180*Math.PI);
+			c=-Math.sin(deg/180*Math.PI);
+			d=Math.cos(deg/180*Math.PI);
+			<br />
+			filter: progid:DXImageTransform.Microsoft.Matrix( M11= 1, M12= 0, M21= 0 , M22=1,SizingMethod='auto expand');
+			IE下的矩阵没有E和F两个参数 M11==a; M12==c; M21==b; M22==d
+
+		-->
+	</head>
+	<body>
+		<div id="box">
+			上
+		</div>
+	</body>
+</html>

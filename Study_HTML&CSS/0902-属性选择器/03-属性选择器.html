@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			h3,p{
+				margin: 0;
+			}
+			h3,div,p{
+				height: 50px;
+				margin-bottom: 10px;
+				background-color: pink;
+			}
+			[data-id~="3"]{
+				background-color: red;
+			}
+		</style>
+		<!--
+			E[attr~="value"]指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表中包含了一个value词，而且等号前面的“〜”不能不写
+		-->
+	</head>
+	<body>
+		<h3 data-title="title" data-id="1 2 3">h3</h3>
+		<div data-user="duoduo" data-id="1 3 4">div</div>
+		<p data-info="info" data-id="1 4 5">p</p>
+		<div data-date="20160902" data-id="1 3 6">div</div>
+	</body>
+</html>

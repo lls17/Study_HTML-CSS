@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*span[data-tips="ok"]{
+				
+			}*/
+			div [data-tips="ok"]{
+				background-color: pink;
+			}
+			div [data-tips="no"]{
+				background-color: yellow;
+			}
+			
+			/**
+			 * 注意区分以下写法
+			 * 
+			 * div [data-tips="ok"]
+			 *   div下的，任何有data-tips="ok"的标签
+			 * 
+			 * div[data-tips="ok"]
+			 *   有data-tips="ok"的属性的div
+			 * 
+			 * div, [data-tips="ok"]
+			 * 	 div 和 任何有data-tips="ok"的标签
+			 * 
+			 * */
+		</style>
+	</head>
+	<body>
+		<div>
+			现在主要的阵容就是<span data-tips="no">四魂</span>了。疯狂八神可以说是四魂里面的核心人物，是队伍里面最主要的输出，打人跟个切菜一样的。可惜的是，目前版本还没有获取的方法，只能在游戏做活动的时候或者是<span data-tips="ok">限时购买</span>才有机会获得，之前已经做过两次这样的活动了。所以玩家还是要时常关注游戏公告以及官网，有的话<span data-tips="ok">充钱</span>都要买下来。
+		</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+		</script>
+		<style>
+			body{
+				margin: 0;
+			}
+			section{
+				overflow: hidden;
+			}
+			div{
+				width: 46.875%;
+				height: 300px;
+				margin: 1.5625%;
+				background-color: pink;
+				float: left;
+			}
+		</style>
+		<!--
+			% 是相对单位。 高度在无法确定的情况下面是无法进行计算的。
+		-->
+	</head>
+	<body>
+		<section>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+	</body>
+</html>

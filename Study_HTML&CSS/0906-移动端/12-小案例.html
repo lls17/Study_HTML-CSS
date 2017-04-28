@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+			var fz = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+		</script>
+		<style>
+			html{
+				height: 100%;
+				overflow: hidden;
+			}
+			body{
+				height: 100%;
+				margin: 0;
+				overflow: auto;
+			}
+			.head{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 1.171875rem;
+				background-color: #fabc09;
+				border-bottom: 1px solid #f98d3e;
+				box-sizing: border-box;
+			}
+			.foot{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 1.171875rem;
+				background-color: pink;
+			}
+			.content{
+				margin-top: 1.171875rem;
+				margin-bottom: 1.171875rem;
+				font-size: 0.75rem;
+			}
+			.ico_type{
+				float: left;
+				width: 1.21875rem;
+				height: 1.15625rem;
+				background: url(img/ico-type.jpg) no-repeat 0.34375rem 0.15625rem;
+				background-size: 0.515625rem 0.84375rem;
+			}
+			.form{
+				float: left;
+				position: relative;
+				padding-top: 0.21875rem;
+			}
+			.search{
+				float: left;
+				border: none;
+				width: 7.5rem;
+				height: 0.78125rem;
+				background-color: #d5dba9;
+				border-radius: 0.109375rem;
+			}
+			.ico_search{
+				position: absolute;
+				left: 0.25rem;
+				top: 0.390625rem;
+				width: 0.328125rem;
+				height: 0.359375rem;
+				background: url(img/ico-search.jpg) no-repeat;
+				background-size: 100%;
+			}
+			.shoping{
+				float: right;
+				width: 1.25rem;
+				height: 1.15625rem;
+				background: url(img/ico-shop.jpg) no-repeat 0.234375rem 0.125rem;
+				background-size: 0.78125rem 0.875rem;
+			}
+		</style>
+		<!--
+			1、使用背景图时，一定要用background-size改变背景图大小
+			2、使用img是，一定要改变其宽或者高
+		-->
+	</head>
+	<body>
+		<header class="head">
+			<a href="" class="ico_type"></a>
+			<form action="" class="form">
+				<i class="ico_search"></i>
+				<input type="text" class="search" />
+			</form>
+			<a href="" class="shoping"></a>
+		</header>
+		<section class="content">
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+			我是文字<br />
+		</section>
+		<footer class="foot"></footer>
+	</body>
+</html>

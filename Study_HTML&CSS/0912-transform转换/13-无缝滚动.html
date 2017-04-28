@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			@keyframes move{
+				0%{
+					transform: translateX(0px);
+				}
+				100%{
+					transform: translateX(-1000px);
+				}
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.wrap{
+				width: 1000px;
+				height: 200px;
+				border: 10px solid pink;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			.box{
+				width: 200%;
+				height: 200px;
+				/*transform: translateX(-500px);*/
+				animation: move 5s infinite linear;
+			}
+			li{
+				float: left;
+			}
+			.wrap:hover .box{
+				animation-play-state:paused;
+				cursor: pointer;
+			}
+		</style>
+		<!--
+			animation-play-state 播放状态（ running 播放 和paused 暂停 ）
+		-->
+	</head>
+	<body>
+		<div class="wrap">
+			<ul class="box">
+				<li><img src="img/1.jpg" alt="" /></li>
+				<li><img src="img/2.jpg" alt="" /></li>
+				<li><img src="img/3.jpg" alt="" /></li>
+				<li><img src="img/4.jpg" alt="" /></li>
+				<li><img src="img/5.jpg" alt="" /></li>
+				<li><img src="img/1.jpg" alt="" /></li>
+				<li><img src="img/2.jpg" alt="" /></li>
+				<li><img src="img/3.jpg" alt="" /></li>
+				<li><img src="img/4.jpg" alt="" /></li>
+				<li><img src="img/5.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+</html>

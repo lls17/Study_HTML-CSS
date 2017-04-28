@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>摇骰子</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.content{
+				width: 612px;
+				height: 612px;
+				transform-style: preserve-3d;
+				perspective: 400px;
+			}
+			.content:hover .box{
+				/*transform: rotateX(720deg);*/
+				/*transform: rotateY(720deg);*/
+				/*transform: rotateZ(720deg);*/
+				transform: rotateX(520deg) rotateY(360deg) rotateZ(720deg);
+			}
+			.box{
+				position: relative;
+				width: 600px;
+				height: 600px;
+				border: 6px solid lightblue;
+				transform-style: preserve-3d;
+				transition: 8s;
+				/*transform: rotateX(0deg);*/
+				/*transform: rotateY(0deg);*/
+				/*transform: rotateZ(0deg);*/
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+				
+				/* 调整平面盒子里内容归位时，调试使用*/
+				/*perspective: 0 0 -200px;*/
+				/*perspective: 200px;*/
+			}
+			.item{
+				height: 200px;
+				width: 200px;
+				margin: auto;
+				text-align: center;
+				font: 48px/200px "微软雅黑";
+				background-color: yellow;
+				position: absolute;
+			}
+			.item:nth-of-type(1){
+				top: 0;
+				left: 200px;
+				transform-origin: bottom;
+				transform: rotateX(90deg);
+			}
+			.item:nth-of-type(2){
+				top: 200px;
+				left: 0;
+				background-color: pink;
+				transform-origin: right;
+				transform: rotateY(-90deg);
+			}
+			.item:nth-of-type(3){
+				top: 200px;
+				left: 200px;
+				background-color: cadetblue;
+				transform-origin: bottom;
+				transform: translateZ(-200px);
+			}
+			.item:nth-of-type(6){
+				top: 200px;
+				left: 200px;
+				background-color: indianred;
+			}
+			.item:nth-of-type(4){
+				top: 200px;
+				right: 0;
+				background-color: darkseagreen;
+				transform-origin: left;
+				transform: rotateY(90deg);
+			}
+			.item:nth-of-type(5){
+				top: 400px;
+				left: 200px;
+				background-color: darkorange;
+				transform-origin: top;
+				transform: rotateX(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<ul class="box">
+				<li class="item">1</li>
+				<li class="item">2</li>
+				<li class="item">3</li>
+				<li class="item">4</li>
+				<li class="item">5</li>
+				<li class="item">6</li>
+			</ul>
+		</div>
+	</body>
+</html>
