@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
+		<style>
+			body,div{
+				margin: 0;	
+			}
+			nav{
+				height: 40px;
+				margin: 50px auto;
+				border-bottom: 1px solid black;
+			}
+			div{
+				float: left;
+				margin-bottom: -1px;
+			}
+			a{
+				height: 39px;
+				line-height: 39px;
+				display: block;
+				padding: 0 15px;
+				text-decoration: none;
+				border: 1px solid transparent;
+			}
+			.active{
+				border-radius: 4px 4px 0 0;
+				border-color: black;
+				border-bottom-color: #fff;
+			}
+			span{
+				float: left;
+				margin-top: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div>
+				<span class="glyphicon glyphicon-alert"></span>
+				<a href="">10元</a>
+			</div>
+			<div><a href="" class="active">20元</a></div>
+			<div><a href="">30元</a></div>
+		</nav>
+	</body>
+</html>

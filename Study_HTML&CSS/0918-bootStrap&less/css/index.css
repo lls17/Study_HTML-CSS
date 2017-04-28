@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+}
+.bordered {
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+}
+.border-radius {
+  border-radius: 50px;
+}
+.box1 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box2 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box3 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box4 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box5 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box6 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box7 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box8 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box9 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box10 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box11 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+.box12 {
+  width: 388px;
+  height: 388px;
+  background-color: pink;
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+  border-radius: 50px;
+}
+div {
+  width: 9.375rem;
+  height: 12.5rem;
+  background-color: pink;
+}

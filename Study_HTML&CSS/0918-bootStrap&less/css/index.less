@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+}
+//变量 star
+//@m20:50px;
+//
+//div{
+//  width: 400px + 100px;
+//  height: 400px - @m20;
+//  background-color: pink;
+//}
+//.div1{
+//  margin: @m20;
+//}
+//.div2{
+//  margin: @m20;
+//}
+//.div3{
+//  margin: @m20;
+//}
+//变量 end
+
+//混合 star
+.bordered {
+  border-top: dotted 10px black;
+  border-bottom: solid 2px black;
+}
+.border-radius (@radius) {
+  border-radius: @radius;
+}
+.border-radius{
+  border-radius: 50px;
+}
+.box1{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius;
+}
+.box2{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius;
+}
+.box3{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius;
+}
+.box4{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box5{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box6{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box7{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box8{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box9{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box10{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box11{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+.box12{
+    width: 388px;
+    height: 388px;
+    background-color: pink;
+    .bordered;
+    .border-radius (50px)
+}
+//混合 end
+
+//嵌套规则 star
+//div{
+//  width: 400px;
+//  height: 400px;
+//  border: 10px solid pink;
+//  a{
+//      display: block;
+//      height: 200px;
+//      background-color: palegreen;
+//      span{
+//          display: block;
+//          height: 100px;
+//          background-color: paleturquoise;
+//      }
+//  }
+//}
+//嵌套规则 end
+
+//运算 star
+@val: 100px;
+@rem: 64rem;//根据设计图大小找出默认rem的大小，64是计算过后的1rem的大小。64rem中的rem是为了在less中计算后添加单位
+div{
+    width: 600 / @rem;
+    height: 800 / @rem;
+    background-color: pink;
+//  width: (600 - 200 + 50) * 2 / @rem;
+}
+//运算 end

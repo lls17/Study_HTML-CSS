@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				width: 500px;
+				border: 1px solid red;
+			}
+			p:first-line{
+				background-color: yellow;
+			}
+			p:first-letter{
+				font-size: 48px;
+			}
+			p::selection{
+				background-color: #eb7350;
+				color: #fff;
+			}
+			p:before{
+				content: '这是before插入的内容';
+				color: red;
+				display: block;
+			}
+		</style>
+		<!--
+			E:first-line 表示E元素中的第一行
+			E:first-letter 表示E元素中的第一个字符
+			E::selection表示E元素在用户选中文字时
+			E:before 生成内容在E元素前
+		-->
+	</head>
+	<body>
+		<p>
+			事情发生在当天上午，何先生和几名工友在乌当区一林区拉木头，路过灌木丛时，他一脚踩进去，把窝安在灌木丛中的马蜂惊了。蜂群呼啸而出，几十只径直朝何先生袭来。从未见过这么多马蜂的他一下子就慌了，拔腿就逃，一边逃一边呼救。
+		</p>
+	</body>
+</html>

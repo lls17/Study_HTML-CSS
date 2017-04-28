@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.main{
+				width: 1000px;
+			}
+			.container{
+				width: 800px;
+			}
+			
+			/* 属性选择器*/
+			div[class |= "col-md"]{
+				background-color: darkorange;
+				border: 1px solid black;
+			}
+			div[class |= "col-sm"]{
+				background-color: mediumpurple;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>栅格系统，可给列设置不同md/sm/xs/lg等，使其自适应</h3>
+		<div class="maindd">
+			<div class="container-fluid main">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">col-md-4</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">col-md-4</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">col-md-4</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">col-md-6</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">col-md-6</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

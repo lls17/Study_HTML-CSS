@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <header class="container">
+    <h1>Bootstrap <em>Css</em> <small>Type</small></h1>
+  </header>
+
+  <nav class="container">
+    <input class="pull-right" type="text" placeholder="请输入关键词.."/>
+  </nav>
+
+  <main class="container">
+    <div class="row">
+      <!-- 响应式布局要求：
+        		PC端显示为一行3列；    lg   md
+        		平板中显示一行2列；    sm
+       			手机中显示为两行一列   xs
+       -->
+      <div class="well col-md-2 col-sm-3" id="main-left">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="#">Home</a></li>
+          <li class="list-group-item"><a href="#">Basic</a></li>
+          <li class="list-group-item"><a href="#">JS</a></li>
+          <li class="list-group-item active">Less</li>
+        </ul>
+      </div>
+
+      <div class="col-md-7 col-sm-9" id="main-content">
+        <div class="row">
+          <div class="col-xs-9">
+            <blockquote>
+              <p>Book List</p>
+              <footer>from <em>bookStore</em></footer>
+            </blockquote>
+          </div>
+          <div class="col-xs-3">
+            <img class="img-circle img-responsive" src="img/1.png" alt=""/>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover">
+            <tr>
+              <td>三国志</td>
+              <td>35.5</td>
+              <td>
+                <button class="btn btn-success btn-sm">购买</button>
+              </td>
+            </tr>
+            <tr>
+              <td>还是幺蛾子</td>
+              <td>35.5</td>
+              <td>
+                <button class="btn btn-danger btn-sm">下架</button>
+              </td>
+            </tr>
+            <tr>
+              <td>红玫瑰和粉玫瑰</td>
+              <td>35.5</td>
+              <td>
+                <button class="btn btn-primary btn-sm">在售</button>
+              </td>
+            </tr>
+            <tr>
+              <td>原来幺蛾子</td>
+              <td>35.5</td>
+              <td>
+                <button class="btn btn-info btn-sm">预售</button>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+      <div class="well col-md-3 hidden-sm hidden-xs" id="main-right">
+        <h1>Fiture</h1>
+        <dl class="list-unstyled">
+          <dt>HTML</dt>
+          <dd>赠人玫瑰，手留余香！</dd>
+          <dt>JS</dt>
+          <dd>大王叫我来巡山~ 抓个和尚当晚餐！</dd>
+          <dt>LLS</dt>
+          <dd class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolores eaque facere harum in ipsum non omnis, quasi temporibus vitae! Alias dolorem eligendi eum id molestias quae quos, sequi vero.</dd>
+        </dl>
+        <blockquote class="blockquote-reverse">
+          <p>From LLS</p>
+          <footer>2016.05.01</footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="container text-center text-uppercase">
+    版权所有 © L&L
+  </footer>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
