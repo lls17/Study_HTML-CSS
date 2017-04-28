@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				margin: 30px auto;
+				width: 600px;
+				border: 1px solid black;
+				text-align: center;
+			}
+			.top, .foot{
+				height: 100px;
+			}
+			.top{
+				background-color: lightgrey;
+			}
+			.foot{
+				background-color: lightcyan;
+				clear: both;
+			}
+			.left{
+				float: left;
+				background-color: lightpink;
+				width: 150px;
+				margin-left: -150px;
+			}
+			.center{
+				float: left;
+				background-color: lightgreen;
+				width: 100%;
+			}
+			.right{
+				float: right;
+				background: lightcoral;
+				width: 100px;
+				margin-right: -100px;
+			}
+			.left, .center, .right{
+				padding-bottom: 1000px;
+				margin-bottom: -1000px;
+			}
+			.main{
+				padding: 0 100px 0 150px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<p>圣杯模式：左、右定宽，中间随容器宽度自适应！</p>
+		<p>1、左右定宽；</p>
+		<p>2、box主体padding左、右预留；center宽度100%；</p>
+		<p>3、内容全部浮动，左右用margin负补偿，占回父容器padding预留的位置</p>
+		<hr />
+		<div class="box">
+			<div class="top">我是头部</div>
+			<div class="main">
+				<div class="left">
+					我是Left <br />
+					我是Left <br />
+					我是Left <br />
+				</div>
+				<div class="center">我是Center</div>
+				<div class="right">我是Right</div>
+			</div>
+			<div class="foot">我是尾部</div>
+		</div>
+	</body>
+</html>

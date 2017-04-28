@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			#parents{
+				width: 600px;
+				border: 1px solid black;
+				margin: 30px auto;
+			}
+			#top{
+				background: lightgray;
+				height: 100px;
+				line-height: 100px;
+			}
+			#foot{
+				background: lightseagreen;
+				height: 100px;
+				line-height: 100px;
+				clear: both;
+			}
+			#left{
+				background: lightgreen;
+				float: left;
+				width: 100px;
+				/*height: 100px;*/
+			}
+			#content{
+				background: orange;
+				float: left;
+				width: 400px;
+			}
+			#right{
+				background: lightgoldenrodyellow;
+				float: right;
+				width: 100px;
+			}
+			
+			/*  如下控制“多列同高”  */
+			#main{
+				overflow: hidden;
+			}
+			#left, #content, #right{
+				padding-bottom: 1000px;
+				margin-bottom: -1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			<b>padding补偿法：</b>
+			1、所有列的padding-bottom设置一个足够大的值；利用背景可借padding占用空间<br/>
+			2、所有列的margin-bottom设置与padding-bottom相抵消的负值来补偿；,<br />
+			3、父容器设置超出隐藏，overflow:hidden;<br />
+			这样子父容器的高度就还是它里面的列没有设定padding-bottom时的高度，当它里面的任一列高度增加了，则父容器的高度被撑到它里面最高那列的高度，其他比这列矮的列则会用它们的padding-bottom来补偿这部分高度差。<br />
+			因为背景是可以用在padding占用的空间里的，而且边框也是跟随padding变化的，这样就成功的使得三者列高最起码看起来是等高的。这样也就满足了我们的需求。
+		</p>
+		<hr />
+		<div id="parents">
+			<div id="top">这是Top!</div>
+				<div id="main">
+					<div id="left">这是Left!这是Left!这是Left!这是Left!这是Left!这是Left!</div>
+					<div id="content">这是Content!</div>
+					<div id="right">这是Right!</div>
+	            </div>
+			<div id="foot">这是Foot!</div>
+        </div>
+	</body>
+</html>
